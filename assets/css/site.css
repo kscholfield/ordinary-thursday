@@ -187,6 +187,7 @@ figure img { width: 100%; background: var(--paper-deep); }
 figcaption { margin-top: 0.75rem; color: var(--muted); font-size: 0.78rem; }
 .entry-meta h2 { margin: 0.45rem 0 0.6rem; }
 .entry-meta p { margin: 0; color: var(--muted); }
+.entry-meta .entry-reflection { margin-top: 1rem; color: var(--ink); }
 
 .travel-entry { margin-bottom: clamp(5rem, 10vw, 9rem); }
 .travel-entry header { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; margin-bottom: 2rem; border-top: 1px solid var(--rule); padding-top: 1.5rem; }
