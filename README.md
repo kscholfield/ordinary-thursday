@@ -26,3 +26,15 @@ web-ready derivatives in `images/web/`. Draft book text belongs in
 
 See `AGENTS.md` before making changes. It contains the project's durable
 editorial, design, technical, and preservation rules.
+
+## Prototype site
+
+The initial static prototype begins at `index.html`, with section indexes in
+`essays/`, `books/`, `thursdays/`, `travel/`, and `about/`. Shared presentation
+styles live in `assets/css/site.css`; neutral demonstration images live in
+`assets/images/placeholders/` and do not represent archival photographs.
+
+Photographs are displayed with `max-width: 100%` and `height: auto`, without
+fixed-height wrappers or forced crops. New archival photographs should retain
+explicit intrinsic width and height attributes and follow the originals/web
+folder convention above.

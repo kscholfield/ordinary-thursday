@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Landscape photograph placeholder</title><desc id="desc">A quiet neutral field indicating where a future landscape photograph will appear.</desc>
+  <rect width="1200" height="750" fill="#d7d5cc"/><path d="M0 530 310 340l205 132 244-263 441 346v195H0Z" fill="#aab2a6"/><path d="m0 617 390-151 260 91 212-104 338 144v153H0Z" fill="#778c7d" opacity=".72"/>
+  <text x="60" y="690" fill="#313a33" font-family="Arial, sans-serif" font-size="24" letter-spacing="3">PHOTOGRAPH PLACEHOLDER</text>
+</svg>
