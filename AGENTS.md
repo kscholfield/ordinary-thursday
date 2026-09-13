@@ -53,6 +53,26 @@ audience-building project.
   access to the full uncropped image. Test image presentation at narrow mobile
   viewport widths as part of every visual change.
 
+### Image storage and processing
+
+- Keith should not need to manually resize photographs before adding them to
+  the project.
+- Preserve the original photograph separately from any web-optimized
+  derivative whenever the original is provided to the repository workflow.
+- Generate appropriately sized web versions for display rather than serving
+  unnecessarily large originals.
+- Existing photographs previously resized to approximately 1200 pixels on their
+  long dimension are acceptable archival/source material and do not need to be
+  recreated from larger originals.
+- For new photographs, create web-ready derivatives at appropriate dimensions
+  and compression while preserving visual quality and the photograph's intended
+  aspect ratio and composition.
+- Never overwrite or destructively resize the only available original
+  photograph.
+- Do not crop substantive photographs merely to make them fit a predetermined
+  layout. Cropped thumbnails may be used when appropriate, provided the full
+  composition remains accessible.
+
 ## Content and navigation
 
 - Keep navigation labels and destinations consistent throughout the site.
@@ -63,6 +83,21 @@ audience-building project.
   absent information.
 - Keep files within the most relevant content directory described in
   `README.md`; shared presentation assets belong in `assets/`.
+
+### Thursday archive
+
+- Thursdays is a chronological visual journal, but it does not need to contain
+  every Thursday.
+- Entries may be added retrospectively and do not need to be added in
+  chronological sequence.
+- Display entries in reverse chronological order regardless of the order in
+  which they were added.
+- Each entry consists of a photograph, date, location, and optional reflection.
+- Do not require an entry title.
+- Do not require a written reflection.
+- Do not invent missing dates, locations, captions, or reflections.
+- The archive may extend backward indefinitely as older photographs are
+  identified.
 
 ## Completion checklist
 
