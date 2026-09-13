@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait photograph placeholder</title><desc id="desc">A quiet neutral field indicating where a future portrait photograph will appear.</desc>
+  <rect width="800" height="1100" fill="#d8d3c8"/><circle cx="570" cy="280" r="125" fill="#b3b4a9"/><path d="M0 720 260 475l183 181 165-120 192 170v394H0Z" fill="#819184"/><path d="M0 890 214 742l170 115 215-157 201 164v236H0Z" fill="#5d7565" opacity=".72"/>
+  <text x="45" y="1045" fill="#313a33" font-family="Arial, sans-serif" font-size="20" letter-spacing="2">PHOTOGRAPH PLACEHOLDER</text>
+</svg>
