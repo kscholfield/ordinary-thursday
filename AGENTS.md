@@ -45,6 +45,13 @@ audience-building project.
   quality. Never overwrite the only original: keep source images in the
   category's `images/originals/` directory and derived web-ready files in its
   `images/web/` directory.
+- **Responsive image handling:** Do not rely on fixed square crops or
+  `object-fit: cover` for substantive photographs merely to maintain layout
+  consistency. Preserve the intended aspect ratio and composition of
+  photographs across desktop, tablet, and mobile displays. Where cropped
+  thumbnails are useful for galleries, treat them as previews and provide
+  access to the full uncropped image. Test image presentation at narrow mobile
+  viewport widths as part of every visual change.
 
 ## Content and navigation
 
