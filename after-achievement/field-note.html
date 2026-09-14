@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Anchors That Travel — After Achievement</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #F8F6F2; --bg-alt: #F0EDE7; --ink: #1C1917; --ink-2: #57534E; --ink-3: #A8A29E;
+      --green: #2C4A3E; --border: #E2DDD7;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    html { font-size: 17px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { border-bottom: 1px solid var(--border); padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; background: var(--bg); position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--green); font-weight: normal; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 0.85rem; letter-spacing: 0.03em; color: var(--ink-2); }
+    .nav-links li a:hover { color: var(--green); }
+    .breadcrumb { max-width: 700px; margin: 0 auto; padding: 1.5rem 2rem 0; font-size: 0.78rem; color: var(--ink-3); letter-spacing: 0.03em; }
+    .breadcrumb a { color: var(--green); }
+    .breadcrumb span { margin: 0 0.4rem; }
+    .article-header { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 2rem; border-bottom: 1px solid var(--border); }
+    .article-section { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 1rem; }
+    .article-header h1 { font-family: var(--serif); font-size: 2.1rem; font-weight: normal; line-height: 1.25; color: var(--ink); margin-bottom: 1rem; letter-spacing: -0.01em; }
+    .article-meta { font-size: 0.8rem; color: var(--ink-3); display: flex; gap: 1.5rem; }
+    .article-body { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+    .article-body p { font-size: 1rem; line-height: 1.85; color: var(--ink-2); margin-bottom: 1.4rem; }
+    .article-body p:first-child { font-size: 1.1rem; color: var(--ink); }
+    .principle { background: var(--bg-alt); border: 1px solid var(--border); border-left: 3px solid var(--green); padding: 1.25rem 1.5rem; margin: 2.5rem 0; }
+    .principle-label { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); margin-bottom: 0.4rem; }
+    .principle p { font-family: var(--serif); font-size: 0.95rem; color: var(--ink); line-height: 1.6; margin-bottom: 0 !important; }
+    .article-nav { max-width: 700px; margin: 0 auto; padding: 2rem 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .article-nav-item { max-width: 45%; }
+    .article-nav-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.3rem; }
+    .article-nav-title { font-family: var(--serif); color: var(--ink); line-height: 1.4; }
+    .article-nav-title:hover { color: var(--green); }
+    footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--ink-3); }
+    .footer-logo { font-family: var(--serif); color: var(--green); }
+    .view-toggle { position: fixed; bottom: 1.5rem; right: 1.5rem; display: flex; gap: 0.5rem; }
+    .view-btn { padding: 0.5rem 1rem; font-size: 0.75rem; border: 1px solid var(--border); background: var(--bg); color: var(--ink-2); cursor: pointer; border-radius: 3px; font-family: var(--sans); }
+    .view-btn.active { background: var(--green); color: white; border-color: var(--green); }
+    .view-btn:hover:not(.active) { background: var(--bg-alt); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">After Achievement</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
+      <li><a href="index.html#navigate">Books</a></li>
+      <li><a href="journey.html">Our Journey</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span><a href="#">Field Notes</a><span>›</span>Building Anchors That Travel
+  </div>
+
+  <header class="article-header">
+    <p class="article-section">Field Notes</p>
+    <h1>Building Anchors That Travel</h1>
+    <div class="article-meta">
+      <span>Keith Scholfield</span>
+      <span>January 2026</span>
+      <span>2 min read</span>
+    </div>
+  </header>
+
+  <article class="article-body">
+
+    <p>After selling the business, I didn't expect letting go of work to be the hard part. I'd done that before, and I was ready.</p>
+
+    <p>What I didn't anticipate was how quickly our life would become almost entirely mobile — and how few of my existing structures were designed for that.</p>
+
+    <p>I had assumed we'd travel in shorter arcs and return home to familiar routines, much like we had in the past. Instead, we found ourselves moving continuously, with no stable rhythm waiting on the other side. Travel stopped being a break from routine and became the routine itself.</p>
+
+    <p>That changed the problem entirely.</p>
+
+    <p>What I'm learning is that anchors tied to place don't survive sustained movement. If they can't travel, they don't hold.</p>
+
+    <p>So this season has become an experiment: building anchors suited to a life in motion — practices that don't depend on a fixed home, ideal conditions, or a predictable schedule.</p>
+
+    <p>Training was the first place this showed up. I no longer assume access to a familiar gym, preferred equipment, or a reliable time window. What matters now is frequency and identity, not optimization. Some days that means a crowded hotel gym. Other days it means walking, bodyweight work, or doing less than planned. The anchor isn't the workout itself; it's the decision to train.</p>
+
+    <p>Eating well has required similar simplification. At home, structure came from shopping, cooking, and routine meals. On the road, it comes from fewer rules and clearer priorities: protein first, sufficient rather than perfect meals, and not confusing indulgence with nourishment. "Good enough, consistently" has proven more reliable than any ideal plan.</p>
+
+    <p>Time, without a workday, has been the most slippery. Mornings now matter more than ever. If the day starts unanchored, it rarely recovers. Reading, writing, training, and walking — done early — create a center of gravity the rest of the day can orbit. Evenings, by contrast, need firmer edges than I expected. Without them, sleep drifts later, and the following day pays the price.</p>
+
+    <p>Attention has become its own practice. Travel offers endless input — new places, conversations, logistics, noise. Without intention, it fragments quickly. I've had to become more deliberate about what I allow in, and equally deliberate about what I leave out. Less consumption. More noticing.</p>
+
+    <p>What's changed most is my relationship to work itself. I no longer measure days by output or productivity. Instead, I ask whether I showed up for the practices that keep me strong, clear, and engaged. Some days the answer is yes. Some days it isn't. But the question itself has become an anchor.</p>
+
+    <p>None of this is finished.</p>
+
+    <p>These anchors are still being tested — adjusted for different places, different rhythms, different seasons of energy. But they share a common trait: they're portable. They don't rely on a single home, a fixed schedule, or ideal conditions.</p>
+
+    <p>That's what is essential now.</p>
+
+    <div class="principle">
+      <p class="principle-label">Field Note</p>
+      <p>Freedom creates space.<br>Anchors determine what fills it.</p>
+    </div>
+
+  </article>
+
+  <nav class="article-nav">
+    <div class="article-nav-item">
+      <p class="article-nav-label">← Previous</p>
+      <a href="tourist-bubble.html" class="article-nav-title">The Tourist Bubble</a>
+    </div>
+    <div class="article-nav-item" style="text-align:right">
+      <p class="article-nav-label">Next →</p>
+      <a href="lucky-motherfuckers.html" class="article-nav-title">Lucky Motherf*ckers</a>
+    </div>
+  </nav>
+
+  <footer>
+    <span class="footer-logo">After Achievement</span>
+    <div style="display:flex;gap:1.5rem;font-size:0.8rem;color:var(--ink-3)">
+      <a href="#">Archive</a>
+    </div>
+  </footer>
+
+  <div class="view-toggle">
+    <button class="view-btn" onclick="window.location='index.html'">Home</button>
+    <button class="view-btn active" onclick="window.location='field-note.html'">Field Note</button>
+  </div>
+
+</body>
+</html>

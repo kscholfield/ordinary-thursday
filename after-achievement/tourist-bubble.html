@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tourist Bubble — After Achievement</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #F8F6F2; --bg-alt: #F0EDE7; --ink: #1C1917; --ink-2: #57534E; --ink-3: #A8A29E;
+      --green: #2C4A3E; --border: #E2DDD7;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    html { font-size: 17px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { border-bottom: 1px solid var(--border); padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; background: var(--bg); position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--green); font-weight: normal; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 0.85rem; letter-spacing: 0.03em; color: var(--ink-2); }
+    .nav-links li a:hover { color: var(--green); }
+    .breadcrumb { max-width: 700px; margin: 0 auto; padding: 1.5rem 2rem 0; font-size: 0.78rem; color: var(--ink-3); letter-spacing: 0.03em; }
+    .breadcrumb a { color: var(--green); }
+    .breadcrumb span { margin: 0 0.4rem; }
+    .article-header { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 2rem; border-bottom: 1px solid var(--border); }
+    .article-section { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 1rem; }
+    .article-header h1 { font-family: var(--serif); font-size: 2.1rem; font-weight: normal; line-height: 1.25; color: var(--ink); margin-bottom: 1rem; letter-spacing: -0.01em; }
+    .article-meta { font-size: 0.8rem; color: var(--ink-3); display: flex; gap: 1.5rem; }
+    .article-body { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+    .article-body p { font-size: 1rem; line-height: 1.85; color: var(--ink-2); margin-bottom: 1.4rem; }
+    .article-body p:first-child { font-size: 1.1rem; color: var(--ink); }
+    .principle { background: var(--bg-alt); border: 1px solid var(--border); border-left: 3px solid var(--green); padding: 1.25rem 1.5rem; margin: 2.5rem 0; }
+    .principle-label { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); margin-bottom: 0.4rem; }
+    .principle p { font-family: var(--serif); font-size: 0.95rem; color: var(--ink); line-height: 1.6; margin-bottom: 0 !important; }
+    .article-nav { max-width: 700px; margin: 0 auto; padding: 2rem 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .article-nav-item { max-width: 45%; }
+    .article-nav-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.3rem; }
+    .article-nav-title { font-family: var(--serif); color: var(--ink); line-height: 1.4; }
+    .article-nav-title:hover { color: var(--green); }
+    footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--ink-3); }
+    .footer-logo { font-family: var(--serif); color: var(--green); }
+    .view-toggle { position: fixed; bottom: 1.5rem; right: 1.5rem; display: flex; gap: 0.5rem; }
+    .view-btn { padding: 0.5rem 1rem; font-size: 0.75rem; border: 1px solid var(--border); background: var(--bg); color: var(--ink-2); cursor: pointer; border-radius: 3px; font-family: var(--sans); }
+    .view-btn.active { background: var(--green); color: white; border-color: var(--green); }
+    .view-btn:hover:not(.active) { background: var(--bg-alt); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">After Achievement</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
+      <li><a href="index.html#navigate">Books</a></li>
+      <li><a href="journey.html">Our Journey</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span><a href="#">Field Notes</a><span>›</span>The Tourist Bubble
+  </div>
+
+  <header class="article-header">
+    <p class="article-section">Field Notes</p>
+    <h1>The Tourist Bubble</h1>
+    <div class="article-meta">
+      <span>Keith Scholfield</span>
+      <span>January 2026</span>
+      <span>5 min read</span>
+    </div>
+  </header>
+
+  <article class="article-body">
+
+    <p>Curated travel doesn't just show you places. It shows you how places want to be shown.</p>
+
+    <p>Most of the time, that mediation is invisible. Flights arrive smoothly. Buses are waiting. Guides speak clearly. Bathrooms are clean. Meals appear on schedule. The experience feels effortless, which is precisely the point.</p>
+
+    <p>The bubble works when you don't notice it.</p>
+
+    <p>On a cruise — where travel is necessarily curated — the bubble is carefully constructed. Routes are chosen. Timing is controlled. Police escorts appear. Traffic parts. Neighborhoods slide by behind glass. You are moved efficiently from ship to site to market to meal and back again.</p>
+
+    <p>Nothing about it is accidental.</p>
+
+    <p>The bubble exists to reduce friction. To minimize risk. To make unfamiliar places digestible in a few hours. It protects travelers from uncertainty and protects destinations from chaos. In many ways, it's functional and necessary.</p>
+
+    <p>But it also distorts.</p>
+
+    <p>Inside the bubble, poverty becomes something you pass through rather than enter. Culture becomes something presented rather than encountered. Markets become transactional zones where too many people sell the same things, hoping someone inside the bubble will choose their stall over the next.</p>
+
+    <p>What's unsettling isn't just the separation — it's the lack of consent.</p>
+
+    <p>People outside the bubble don't opt into being scenery. They don't agree to have their streets used as corridors or their lives compressed into a panoramic drive. They're simply there, living, while the bubble passes through.</p>
+
+    <p>From inside, it's easy to miss this entirely.</p>
+
+    <p>You're listening to a guide. Watching the time. Wondering where the bathroom is. Deciding whether to buy something you don't need. The experience keeps you busy enough not to think too hard about what's being filtered out.</p>
+
+    <p>The bubble also creates strange contradictions.</p>
+
+    <p>You can feel safe while being escorted by armed police. Comfortable while moving through visibly distressed neighborhoods. Curious while remaining fundamentally detached. The bubble allows proximity without engagement — seeing without touching, observing without consequence.</p>
+
+    <p>It's not evil. It's efficient.</p>
+
+    <p>And that efficiency comes at a cost.</p>
+
+    <p>Over time, the bubble trains you to confuse access with understanding. To mistake having been somewhere for having known it. To believe that a few curated hours add up to insight.</p>
+
+    <p>They don't.</p>
+
+    <p>The moments that tend to linger — the ones that feel real — often happen at the edges of the bubble. A conversation not on the schedule. A walk taken instead of a ride. A meal chosen without a guide pointing at the menu. A wrong turn that requires asking for help.</p>
+
+    <p>Those moments feel riskier. Less controlled. But they're also where agency begins to reappear — yours and theirs.</p>
+
+    <p>I don't think the solution is to reject the bubble entirely. That would be naïve. The bubble exists because the world is uneven, complex, and not always safe. Structure matters. Protection matters.</p>
+
+    <p>But awareness matters too.</p>
+
+    <p>Once you see the bubble, you can't fully unsee it. You start noticing when you're being moved too smoothly. When discomfort has been edited out. When experience has been packaged to fit a timeline rather than a place.</p>
+
+    <p>And you start asking better questions — not about what you saw, but about what you weren't meant to see.</p>
+
+    <p>The bubble doesn't make travel meaningless. But it does make honesty optional.</p>
+
+    <p>Stepping outside it — even briefly — requires effort, humility, and tolerance for discomfort. It means walking instead of riding. Waiting instead of being ushered. Accepting that some days will feel unfinished.</p>
+
+    <p>But it also restores proportion.</p>
+
+    <p>It reminds you that places are not experiences designed for you. They are lives unfolding with or without your presence. And the more aware you are of the bubble carrying you through them, the less likely you are to mistake convenience for truth.</p>
+
+    <div class="principle">
+      <p class="principle-label">Field Note</p>
+      <p>The bubble is always there. The choice is whether you notice it — and whether, when possible, you occasionally let it thin.</p>
+    </div>
+
+  </article>
+
+  <nav class="article-nav">
+    <div class="article-nav-item">
+      <p class="article-nav-label">← Previous</p>
+      <a href="traveler-legs.html" class="article-nav-title">Getting Your Traveler Legs Back</a>
+    </div>
+    <div class="article-nav-item" style="text-align:right">
+      <p class="article-nav-label">Next →</p>
+      <a href="field-note.html" class="article-nav-title">Building Anchors That Travel</a>
+    </div>
+  </nav>
+
+  <footer>
+    <span class="footer-logo">After Achievement</span>
+    <div style="display:flex;gap:1.5rem;font-size:0.8rem;color:var(--ink-3)">
+      <a href="#">Archive</a>
+    </div>
+  </footer>
+
+  <div class="view-toggle">
+    <button class="view-btn" onclick="window.location='index.html'">Home</button>
+    <button class="view-btn active" onclick="window.location='tourist-bubble.html'">Field Note</button>
+  </div>
+
+</body>
+</html>

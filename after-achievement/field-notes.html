@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Field Notes — After Achievement</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #F8F6F2; --bg-alt: #F0EDE7; --ink: #1C1917; --ink-2: #57534E; --ink-3: #A8A29E;
+      --green: #2C4A3E; --border: #E2DDD7;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    html { font-size: 17px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+
+    nav { border-bottom: 1px solid var(--border); padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; background: var(--bg); position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--green); font-weight: normal; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 0.85rem; letter-spacing: 0.03em; color: var(--ink-2); }
+    .nav-links li a:hover { color: var(--green); }
+
+    .page-header { max-width: 740px; margin: 0 auto; padding: 3rem 2rem 2rem; border-bottom: 1px solid var(--border); }
+    .page-label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 1rem; }
+    .page-header h1 { font-family: var(--serif); font-size: 2rem; font-weight: normal; color: var(--ink); margin-bottom: 0.75rem; letter-spacing: -0.01em; }
+    .page-header p { font-size: 0.95rem; color: var(--ink-2); line-height: 1.75; max-width: 520px; }
+
+    /* Tag filter bar */
+    .filter-bar { max-width: 740px; margin: 0 auto; padding: 1.5rem 2rem; display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+    .filter-label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-right: 0.5rem; }
+    .tag-btn {
+      font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 0.3rem 0.8rem; border: 1px solid var(--border); border-radius: 2px;
+      background: var(--bg); color: var(--ink-3); cursor: pointer; font-family: var(--sans);
+      transition: all 0.12s;
+    }
+    .tag-btn:hover { border-color: var(--green); color: var(--green); }
+    .tag-btn.active { background: var(--green); color: white; border-color: var(--green); }
+
+    /* Note list */
+    .notes-list { max-width: 740px; margin: 0 auto; padding: 0 2rem 4rem; }
+    .note-item { display: flex; gap: 2rem; padding: 1.5rem 0; border-bottom: 1px solid var(--border); align-items: baseline; }
+    .note-item:last-child { border-bottom: none; }
+    .note-item.hidden { display: none; }
+    .note-date { font-size: 0.78rem; color: var(--ink-3); min-width: 100px; padding-top: 0.15rem; flex-shrink: 0; }
+    .note-content { flex: 1; }
+    .note-tags { display: flex; gap: 0.4rem; margin-bottom: 0.4rem; }
+    .note-tag {
+      font-size: 0.66rem; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--ink-3); border: 1px solid var(--border); padding: 0.15rem 0.5rem;
+      border-radius: 2px;
+    }
+    .note-title { font-family: var(--serif); font-size: 1.05rem; font-weight: normal; color: var(--ink); margin-bottom: 0.35rem; line-height: 1.4; display: block; }
+    .note-title:hover { color: var(--green); }
+    .note-excerpt { font-size: 0.85rem; color: var(--ink-2); line-height: 1.6; }
+
+    /* Empty state */
+    .empty-state { padding: 3rem 0; text-align: center; color: var(--ink-3); font-size: 0.9rem; display: none; }
+    .empty-state.visible { display: block; }
+
+    footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--ink-3); }
+    .footer-logo { font-family: var(--serif); color: var(--green); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">After Achievement</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
+      <li><a href="index.html#navigate">Books</a></li>
+      <li><a href="journey.html">Our Journey</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <p class="page-label">Archive</p>
+    <h1>Field Notes</h1>
+    <p>Short dispatches from a life in motion. Observations from travel, daily practice, and the ongoing work of paying attention.</p>
+  </header>
+
+  <div class="filter-bar">
+    <span class="filter-label">Filter</span>
+    <button class="tag-btn" data-tag="travel">Travel</button>
+    <button class="tag-btn" data-tag="freedom">Freedom</button>
+    <button class="tag-btn" data-tag="stewardship">Stewardship</button>
+    <button class="tag-btn" data-tag="attention">Attention</button>
+  </div>
+
+  <div class="notes-list">
+    <div class="empty-state" id="empty-state">No notes match that filter.</div>
+
+    <div class="note-item" data-tags="attention stewardship">
+      <span class="note-date">July 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Attention</span><span class="note-tag">Stewardship</span></div>
+        <a href="cape.html" class="note-title">The Cape</a>
+        <p class="note-excerpt">A cape isn't a destination — it's a transition. On what mariners knew about rounding capes, and what that reveals about the milestones we mistake for endings.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="attention stewardship">
+      <span class="note-date">June 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Attention</span><span class="note-tag">Stewardship</span></div>
+        <a href="routes.html" class="note-title">The Routes That Disappear</a>
+        <p class="note-excerpt">Life isn't just a collection of events — it's a collection of seasons. On what happens when the conditions that made a route possible quietly change, and what you realize you were actually attached to.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="attention stewardship">
+      <span class="note-date">June 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Attention</span><span class="note-tag">Stewardship</span></div>
+        <a href="last-time.html" class="note-title">The Last Time Is Rarely Announced</a>
+        <p class="note-excerpt">Driving home from New Mexico, Shirley mentioned we should stop at Petrified Forest next time. There probably won't be a next time. On the moments we assume are renewable — and aren't.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="stewardship attention">
+      <span class="note-date">March 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Stewardship</span><span class="note-tag">Attention</span></div>
+        <a href="aliveness.html" class="note-title">Optimize for Aliveness</a>
+        <p class="note-excerpt">When you no longer have to be anywhere, the spreadsheet stops being the primary tool. On energy, premature permanence, and the question that changes the search entirely.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="stewardship attention">
+      <span class="note-date">March 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Stewardship</span><span class="note-tag">Attention</span></div>
+        <a href="enough.html" class="note-title">Enough</a>
+        <p class="note-excerpt">On the moment when the marginal value of more begins to decline — and why that recognition changes everything about how the second game is played.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="stewardship attention">
+      <span class="note-date">March 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Stewardship</span><span class="note-tag">Attention</span></div>
+        <a href="steady-presence.html" class="note-title">The Steady Presence</a>
+        <p class="note-excerpt">What remains when people no longer need you in the same way — and why being steady may matter more than being necessary.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="stewardship">
+      <span class="note-date">March 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Stewardship</span></div>
+        <a href="stewardship-generations.html" class="note-title">Stewardship Across Generations</a>
+        <p class="note-excerpt">Wealth is never just money — it is an ecosystem. On preparing the next generation for the systems they will inherit, not just the assets.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="stewardship freedom">
+      <span class="note-date">March 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Stewardship</span><span class="note-tag">Freedom</span></div>
+        <a href="choosing-pillars.html" class="note-title">Choosing Your Pillars</a>
+        <p class="note-excerpt">After freedom without direction, structure returns — but chosen rather than imposed. On the few areas that, when maintained, allow everything else to function well.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="freedom">
+      <span class="note-date">March 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Freedom</span></div>
+        <a href="freedom-direction.html" class="note-title">Freedom Without Direction</a>
+        <p class="note-excerpt">The part no one talks about: when the obligations fall away, what replaces them is space — and space, without direction, can feel surprisingly unstable.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="stewardship freedom">
+      <span class="note-date">March 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Stewardship</span><span class="note-tag">Freedom</span></div>
+        <a href="stewarding.html" class="note-title">The Second Game: From Building to Stewarding</a>
+        <p class="note-excerpt">If the first game is about building and much of what we build eventually disappears, what is the second game about? On the shift from accumulation to continuity.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="stewardship attention">
+      <span class="note-date">March 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Stewardship</span><span class="note-tag">Attention</span></div>
+        <a href="what-endures.html" class="note-title">What Endures vs What Disappears</a>
+        <p class="note-excerpt">Walking through Roman ruins beneath Barcelona, and what it reveals about what we build — and what we leave behind.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="attention stewardship">
+      <span class="note-date">February 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Attention</span><span class="note-tag">Stewardship</span></div>
+        <a href="lucky-motherfuckers.html" class="note-title">Lucky Motherf*ckers</a>
+        <p class="note-excerpt">Luck doesn't erase effort. It contextualizes it. On what travel makes unavoidable to see.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="travel freedom">
+      <span class="note-date">January 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Travel</span><span class="note-tag">Freedom</span></div>
+        <a href="field-note.html" class="note-title">Building Anchors That Travel</a>
+        <p class="note-excerpt">When travel becomes the routine rather than a break from it, anchors tied to place stop holding. On building practices that carry themselves.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="travel attention">
+      <span class="note-date">January 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Travel</span><span class="note-tag">Attention</span></div>
+        <a href="tourist-bubble.html" class="note-title">The Tourist Bubble</a>
+        <p class="note-excerpt">On the distance created by managed experiences — and what becomes possible when you let the bubble thin.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="travel attention">
+      <span class="note-date">January 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Travel</span><span class="note-tag">Attention</span></div>
+        <a href="traveler-legs.html" class="note-title">Getting Your Traveler Legs Back</a>
+        <p class="note-excerpt">A day in São Tomé with no agenda — walking, navigating, adapting — and what it felt like when discomfort gave way to ease.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="freedom attention">
+      <span class="note-date">January 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Freedom</span><span class="note-tag">Attention</span></div>
+        <a href="freedom-from-performance.html" class="note-title">Freedom From Performance</a>
+        <p class="note-excerpt">On the quiet pressure to extract meaning from every moment — and what becomes possible when you stop performing the experience.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="travel attention">
+      <span class="note-date">January 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Travel</span><span class="note-tag">Attention</span></div>
+        <a href="walking-without-script.html" class="note-title">Walking Without a Script</a>
+        <p class="note-excerpt">A Sunday in Lomé with no tour, no plan, and more exposed streets than the websites suggested. On calibration, and what a hard day can give back.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="travel attention">
+      <span class="note-date">January 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Travel</span><span class="note-tag">Attention</span></div>
+        <a href="bus-window-problem.html" class="note-title">The Bus Window Problem</a>
+        <p class="note-excerpt">Grand Bassam, Ivory Coast: on the delay between seeing something and actually understanding it — and what a cool shower revealed about the view from inside the bus.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="travel attention">
+      <span class="note-date">January 2026</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Travel</span><span class="note-tag">Attention</span></div>
+        <a href="how-far-to-walk.html" class="note-title">How Far Is Too Far to Walk Back?</a>
+        <p class="note-excerpt">A stop in Ghana, an unreliable taxi, and the rule that turned out to be about more than distance.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="travel freedom">
+      <span class="note-date">December 2025</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Travel</span><span class="note-tag">Freedom</span></div>
+        <a href="between-city-ship.html" class="note-title">Between the City and the Ship</a>
+        <p class="note-excerpt">Leaving Barcelona for the cruise: on how quickly the environment organizes you — and what that reveals about where freedom actually lives.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="freedom">
+      <span class="note-date">December 2025</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Freedom</span></div>
+        <a href="turning-freedom-fulfillment.html" class="note-title">Turning Freedom Into Fulfillment</a>
+        <p class="note-excerpt">Five months after selling the business: on the sprint into freedom, what drift actually feels like, and why freedom turned out to be the responsibility, not the reward.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="travel freedom">
+      <span class="note-date">November 2025</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Travel</span><span class="note-tag">Freedom</span></div>
+        <a href="panama-canal.html" class="note-title">The Panama Canal and the Problem of Freedom</a>
+        <p class="note-excerpt">I expected freedom to carry me. Instead, I discovered that without intention, freedom decays.</p>
+      </div>
+    </div>
+
+    <div class="note-item" data-tags="travel attention">
+      <span class="note-date">November 2025</span>
+      <div class="note-content">
+        <div class="note-tags"><span class="note-tag">Travel</span><span class="note-tag">Attention</span></div>
+        <a href="hana.html" class="note-title">Hana, Makawao, and What Quietly Felt Better</a>
+        <p class="note-excerpt">A week in upcountry Maui made a preference visible that a decade of resort stays had kept invisible.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span class="footer-logo">After Achievement</span>
+    <div style="display:flex;gap:1.5rem;font-size:0.8rem;color:var(--ink-3)">
+      <a href="#">Archive</a>
+    </div>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.tag-btn');
+    const items = document.querySelectorAll('.note-item');
+    const emptyState = document.getElementById('empty-state');
+    let activeTag = null;
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tag = btn.dataset.tag;
+        if (activeTag === tag) {
+          // Clear filter
+          activeTag = null;
+          btn.classList.remove('active');
+          items.forEach(item => item.classList.remove('hidden'));
+          emptyState.classList.remove('visible');
+        } else {
+          // Set filter
+          activeTag = tag;
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          let visible = 0;
+          items.forEach(item => {
+            const tags = item.dataset.tags.split(' ');
+            if (tags.includes(tag)) {
+              item.classList.remove('hidden');
+              visible++;
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+          emptyState.classList.toggle('visible', visible === 0);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

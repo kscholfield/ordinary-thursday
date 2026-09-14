@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sintra &amp; Cascais — Our Journey — After Achievement</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #F8F6F2; --bg-alt: #F0EDE7; --ink: #1C1917; --ink-2: #57534E; --ink-3: #A8A29E; --green: #2C4A3E; --border: #E2DDD7; --serif: Georgia, 'Times New Roman', serif; --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    html { font-size: 17px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { border-bottom: 1px solid var(--border); padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; background: var(--bg); position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--green); font-weight: normal; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 0.85rem; letter-spacing: 0.03em; color: var(--ink-2); }
+    .nav-links li a:hover { color: var(--green); }
+    .breadcrumb { max-width: 700px; margin: 0 auto; padding: 1.5rem 2rem 0; font-size: 0.78rem; color: var(--ink-3); letter-spacing: 0.03em; }
+    .breadcrumb a { color: var(--green); }
+    .breadcrumb span { margin: 0 0.4rem; }
+    .article-header { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 2rem; border-bottom: 1px solid var(--border); }
+    .article-section { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 0.5rem; }
+    .article-header h1 { font-family: var(--serif); font-size: 2.1rem; font-weight: normal; line-height: 1.25; color: var(--ink); margin-bottom: 1rem; letter-spacing: -0.01em; }
+    .article-meta { font-size: 0.8rem; color: var(--ink-3); display: flex; gap: 1.5rem; }
+    .article-body { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+    .article-body p { font-size: 1rem; line-height: 1.85; color: var(--ink-2); margin-bottom: 1.4rem; }
+    .article-body p:first-child { font-size: 1.1rem; color: var(--ink); }
+    .article-body h2 { font-family: var(--serif); font-size: 1.35rem; font-weight: normal; color: var(--ink); margin: 2.5rem 0 1rem; line-height: 1.3; }
+    .article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1.4rem; color: var(--ink-2); }
+    .article-body li { margin-bottom: 0.4rem; line-height: 1.75; }
+    .article-body hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    .article-nav { max-width: 700px; margin: 0 auto; padding: 2rem 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .article-nav-item { max-width: 45%; }
+    .article-nav-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.3rem; }
+    .article-nav-title { font-family: var(--serif); color: var(--ink); line-height: 1.4; }
+    .article-nav-title:hover { color: var(--green); }
+    .photo-grid { max-width: 700px; margin: 0 auto; padding: 0 2rem 3rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .photo-pano figure, .photo-full figure, .photo-pair figure { margin: 0; }
+    .photo-pano img { width: 100%; height: auto; display: block; border-radius: 2px; }
+    .photo-full img { width: 100%; height: auto; display: block; border-radius: 2px; }
+    .photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .photo-pair img { width: 100%; height: 280px; object-fit: cover; object-position: center; display: block; border-radius: 2px; }
+    figcaption { font-size: 0.72rem; color: var(--ink-3); text-align: center; margin-top: 0.3rem; letter-spacing: 0.02em; }
+    @media (max-width: 500px) { .photo-pair { grid-template-columns: 1fr; } .photo-pair img { height: 220px; } }
+    footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--ink-3); }
+    .footer-logo { font-family: var(--serif); color: var(--green); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">After Achievement</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
+      <li><a href="index.html#navigate">Books</a></li>
+      <li><a href="journey.html">Our Journey</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span><a href="journey.html">Our Journey</a><span>›</span>Sintra &amp; Cascais
+  </div>
+  <header class="article-header">
+    <p class="article-section">Our Journey</p>
+    <h1>Sintra &amp; Cascais</h1>
+    <div class="article-meta">
+      <span>Keith &amp; Shirley</span>
+      <span>July 2026</span>
+    </div>
+  </header>
+  <article class="article-body">
+    <p>We left the Douro Valley at 11 after a leisurely breakfast and drove a little over three hours to Sintra.</p>
+    <p>We checked into Valverde Palácio de Seteais, dropped our bags, got some restaurant recommendations and walked into town.</p>
+    <p>We wandered for a while before stopping for dinner. I had pork loin with Madeira wine sauce. Shirley had beef fillets with port wine sauce. We shared a bottle of local wine.</p>
+    <p>Both meals were great.</p>
+    <p>Portugal was becoming remarkably easy to enjoy.</p>
+
+    <h2>Sintra and Cascais</h2>
+    <p>The next morning we met our guide, Helena, and driver, Miguel, for a full day exploring Sintra and the surrounding area.</p>
+    <p>After touring Sintra, we drove toward the coast and Cascais.</p>
+    <p>Cascais was busy with tourists—not quite Laguna Beach in summer, but busy. We visited the beaches, harbor and tourist areas.</p>
+    <p>There were plenty of restaurants and hotels, and despite the crowds, I could imagine returning and staying for a few weeks.</p>
+    <p>Lunch helped.</p>
+    <p>We ate at Maré, overlooking the beach.</p>
+    <p>Shirley had the catch of the day—turbot with a light garlic and oil preparation, accompanied by salad and green beans. She had a glass of the restaurant's own white wine.</p>
+    <p>I had prawns with coriander rice.</p>
+    <p>The restaurant had a Michelin star.</p>
+    <p>Shirley's review was considerably less formal:</p>
+    <p>"Some good shit."</p>
+
+    <h2>Learning to Eat Later</h2>
+    <p>We talked with Helena about Portuguese meal times.</p>
+    <p>Breakfast is often light. Lunch is the main meal. Dinner tends to be lighter and considerably later than we're accustomed to—often after 8:00 p.m., particularly during the long summer days.</p>
+    <p>That schedule was proving difficult for me.</p>
+    <p>At almost 9:00 that evening, the sun still hadn't set.</p>
+    <p>I could understand why nobody was in a hurry to go inside.</p>
+    <p>I just wasn't sure my internal clock was ever going to understand it.</p>
+
+    <h2>Cabo da Roca</h2>
+    <p>That day we also visited Cabo da Roca, the westernmost point of continental Europe.</p>
+    <p>Standing there made me wonder about something surprisingly basic:</p>
+    <p>What exactly is a cape?</p>
+    <p>I'd recently stood near the Cape of Good Hope in South Africa.</p>
+    <p>Now we were at Cabo da Roca in Portugal.</p>
+    <p>The question led to a conversation and eventually to an essay about rounding a cape—leaving familiar waters behind and continuing into something new.</p>
+    <p>At the time, though, Cabo da Roca was simply another beautiful place we'd reached while traveling along the Portuguese coast.</p>
+    <p>The meaning came later.</p>
+
+    <h2>A Random Sunday</h2>
+    <p>Sunday may have been the day that best captured Sintra.</p>
+    <p>We woke around 7 and lingered in the room over espresso.</p>
+    <p>We didn't go down to breakfast until 10.</p>
+    <p>Around 11, we finally headed out.</p>
+    <p>We visited Palácio e Parque Biester, spending a couple of hours walking through the house and grounds.</p>
+    <p>Then we went to Quinta da Regaleira, where we wandered through the palace and gardens and saw the Initiation Well.</p>
+    <p>We stopped at the café for a late snack. Shirley had beef bourguignon and white wine. I had a turkey and blue cheese sandwich with red wine.</p>
+    <p>Then we headed back because there was a ballet at our hotel at 6:00.</p>
+    <p>Nothing about the day had felt rushed.</p>
+    <p>Espresso in the room.</p>
+    <p>Breakfast at 10.</p>
+    <p>A palace.</p>
+    <p>A garden.</p>
+    <p>Lunch with wine.</p>
+    <p>A ballet.</p>
+    <p>I wrote:</p>
+    <p>"Amazing day for a random Sunday."</p>
+    <p>Shirley said it was a great day.</p>
+    <p>Then I wrote something that captured what was beginning to sink in:</p>
+    <p>"Every day has been a great day. Good thing as this is our life for the time being."</p>
+
+    <h2>What We'll Remember</h2>
+    <p>We'll remember walking into Sintra from the hotel on our first evening and finding somewhere for dinner.</p>
+    <p>We'll remember Helena and Miguel showing us Sintra and the coast.</p>
+    <p>We'll remember Cascais and thinking that we could easily return for a longer stay.</p>
+    <p>We'll remember lunch at Maré—the turbot, prawns, wine, and Shirley's concise restaurant review.</p>
+    <p>We'll remember trying to adjust to Portuguese meal times while the sun was still shining at 9:00 at night.</p>
+    <p>We'll remember Cabo da Roca and the question it unexpectedly raised about capes.</p>
+    <p>We'll remember the gardens and architecture of Sintra.</p>
+    <p>We'll remember the Initiation Well at Quinta da Regaleira.</p>
+    <p>We'll remember espresso in the room and not getting to breakfast until 10.</p>
+    <p>And we'll remember a completely ordinary Sunday that somehow included palaces, gardens, wine and a ballet.</p>
+    <p>An amazing day for a random Sunday.</p>
+
+    <h2>Would We Return?</h2>
+    <p>Yes.</p>
+    <p>Sintra itself was beautiful, although it was also a place with plenty to see and do rather than somewhere we immediately imagined establishing a daily life.</p>
+    <p>Cascais was different.</p>
+    <p>Despite the summer crowds, it felt like somewhere we could stay for a few weeks—walk to restaurants, spend time near the ocean, explore the surrounding coast and settle into more of a rhythm.</p>
+    <p>And increasingly, that was the question we were asking.</p>
+    <p>Not simply:</p>
+    <p>Did we enjoy visiting?</p>
+    <p>But:</p>
+    <p>Would we like to live here for a while?</p>
+    <p>On July 20, after another leisurely morning, we met our driver at 11 and headed south toward Melides.</p>
+    <p>Along the way, he pointed out towns and places worth returning to—Setúbal, Arrábida, Palmela and others.</p>
+    <p>Portugal was beginning to feel less like a country we were working our way through and more like somewhere we were already thinking about coming back to explore differently.</p>
+  </article>
+  <section class="photo-grid">
+    <div class="photo-pano"><figure><img src="Sintra-04.jpg" alt="Sintra village square with the Castelo dos Mouros on the hill above"><figcaption>Sintra — the Castelo dos Mouros above the town</figcaption></figure></div>
+    <div class="photo-pair">
+      <figure><img src="Sintra-01.jpg" alt="Sintra village seen from the Palácio Nacional de Sintra"><figcaption>Sintra from the Palácio Nacional de Sintra</figcaption></figure>
+      <figure><img src="Sintra-02.jpg" alt="Castelo dos Mouros walls on the rocky hillside above Sintra"><figcaption>Castelo dos Mouros</figcaption></figure>
+    </div>
+    <div class="photo-full"><figure><img src="Sintra-10.jpg" alt="Palácio Nacional de Pena seen through the trees"><figcaption>Palácio Nacional de Pena</figcaption></figure></div>
+    <div class="photo-pair">
+      <figure><img src="Sintra-15.jpg" alt="Quinta da Regaleira palace seen through pink hydrangeas"><figcaption>Quinta da Regaleira</figcaption></figure>
+      <figure><img src="Sintra-12.jpg" alt="Looking down into the Initiation Well at Quinta da Regaleira"><figcaption>The Initiation Well, Quinta da Regaleira</figcaption></figure>
+    </div>
+    <div class="photo-pano"><figure><img src="Sintra-13.jpg" alt="The grottoes at Quinta da Regaleira"><figcaption>The grottoes at Quinta da Regaleira</figcaption></figure></div>
+    <div class="photo-pano"><figure><img src="Sintra-05.jpg" alt="Keith and Shirley at the Cabo da Roca monument — westernmost point of continental Europe"><figcaption>Cabo da Roca — the westernmost point of continental Europe</figcaption></figure></div>
+    <div class="photo-pano"><figure><img src="Sintra-09.jpg" alt="Museu Condes de Castro Guimarães, Cascais"><figcaption>Palácio e Parque Biester</figcaption></figure></div>
+    <div class="photo-pair">
+      <figure><img src="Sintra-07.jpg" alt="Keith and Shirley at Boca do Inferno, Cascais"><figcaption>Boca do Inferno, Cascais</figcaption></figure>
+      <figure><img src="Sintra-06.jpg" alt="Statue of Luís de Camões in Cascais"><figcaption>Luís de Camões, Cascais</figcaption></figure>
+    </div>
+  </section>
+  <nav class="article-nav">
+    <div class="article-nav-item">
+      <p class="article-nav-label">← Previous</p>
+      <a href="jrn-douro-valley.html" class="article-nav-title">Douro Valley</a>
+    </div>
+    <div class="article-nav-item" style="text-align:right">
+      <p class="article-nav-label">Next →</p>
+      <a href="jrn-melides.html" class="article-nav-title">Melides</a>
+    </div>
+  </nav>
+  <footer>
+    <span class="footer-logo">After Achievement</span>
+    <div style="display:flex;gap:1.5rem;font-size:0.8rem;color:var(--ink-3)"><a href="journey.html">All trips</a></div>
+  </footer>
+</body>
+</html>

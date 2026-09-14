@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagos — Our Journey — After Achievement</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #F8F6F2; --bg-alt: #F0EDE7; --ink: #1C1917; --ink-2: #57534E; --ink-3: #A8A29E; --green: #2C4A3E; --border: #E2DDD7; --serif: Georgia, 'Times New Roman', serif; --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    html { font-size: 17px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { border-bottom: 1px solid var(--border); padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; background: var(--bg); position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--green); font-weight: normal; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 0.85rem; letter-spacing: 0.03em; color: var(--ink-2); }
+    .nav-links li a:hover { color: var(--green); }
+    .breadcrumb { max-width: 700px; margin: 0 auto; padding: 1.5rem 2rem 0; font-size: 0.78rem; color: var(--ink-3); letter-spacing: 0.03em; }
+    .breadcrumb a { color: var(--green); }
+    .breadcrumb span { margin: 0 0.4rem; }
+    .article-header { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 2rem; border-bottom: 1px solid var(--border); }
+    .article-section { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 0.5rem; }
+    .article-header h1 { font-family: var(--serif); font-size: 2.1rem; font-weight: normal; line-height: 1.25; color: var(--ink); margin-bottom: 1rem; letter-spacing: -0.01em; }
+    .article-meta { font-size: 0.8rem; color: var(--ink-3); display: flex; gap: 1.5rem; }
+    .article-body { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+    .article-body p { font-size: 1rem; line-height: 1.85; color: var(--ink-2); margin-bottom: 1.4rem; }
+    .article-body p:first-child { font-size: 1.1rem; color: var(--ink); }
+    .article-body h2 { font-family: var(--serif); font-size: 1.35rem; font-weight: normal; color: var(--ink); margin: 2.5rem 0 1rem; line-height: 1.3; }
+    .article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1.4rem; color: var(--ink-2); }
+    .article-body li { margin-bottom: 0.4rem; line-height: 1.75; }
+    .article-body hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    .article-nav { max-width: 700px; margin: 0 auto; padding: 2rem 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .article-nav-item { max-width: 45%; }
+    .article-nav-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.3rem; }
+    .article-nav-title { font-family: var(--serif); color: var(--ink); line-height: 1.4; }
+    .article-nav-title:hover { color: var(--green); }
+    .photo-grid { max-width: 700px; margin: 0 auto; padding: 0 2rem 3rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .photo-pano figure, .photo-full figure, .photo-pair figure { margin: 0; }
+    .photo-pano img { width: 100%; height: auto; display: block; border-radius: 2px; }
+    .photo-full img { width: 100%; height: auto; display: block; border-radius: 2px; }
+    .photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .photo-pair img { width: 100%; height: 280px; object-fit: cover; object-position: center; display: block; border-radius: 2px; }
+    figcaption { font-size: 0.72rem; color: var(--ink-3); text-align: center; margin-top: 0.3rem; letter-spacing: 0.02em; }
+    @media (max-width: 500px) { .photo-pair { grid-template-columns: 1fr; } .photo-pair img { height: 220px; } }
+    footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--ink-3); }
+    .footer-logo { font-family: var(--serif); color: var(--green); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">After Achievement</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
+      <li><a href="index.html#navigate">Books</a></li>
+      <li><a href="journey.html">Our Journey</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span><a href="journey.html">Our Journey</a><span>›</span>Lagos
+  </div>
+  <header class="article-header">
+    <p class="article-section">Our Journey</p>
+    <h1>Lagos</h1>
+    <div class="article-meta">
+      <span>Keith &amp; Shirley</span>
+      <span>July 2026</span>
+    </div>
+  </header>
+  <article class="article-body">
+    <p>We left São Lourenço do Barrocal around 10:30 and drove three hours south to the Algarve.</p>
+    <p>Our hotel in Lagos was Casa Mãe, tucked into the old part of town.</p>
+    <p>The streets getting there were incredibly tight.</p>
+    <p>I remember thinking that trying to drive ourselves would be crazy.</p>
+    <p>We dropped our bags and immediately went out for a walk.</p>
+    <p>The streets and squares were busy with tourists, but not overwhelmingly so. We stopped at a restaurant recommended by the concierge and ordered fish cataplana—a Portuguese fish stew with potatoes.</p>
+    <p>It tasted great.</p>
+    <p>Afterward we wandered a little more, stopped at a market for toothpaste, hairspray and a snack, then returned to the hotel.</p>
+    <p>Nothing remarkable had happened.</p>
+    <p>But almost immediately, Lagos felt good.</p>
+
+    <h2>We Don't Have to Do Anything</h2>
+    <p>The next morning we woke around 8 and had a couple of espressos in the room.</p>
+    <p>I managed a workout on the balcony.</p>
+    <p>We finally made it to breakfast around 10:30, ate slowly, returned to the room and eventually headed out around noon.</p>
+    <p>We wondered aloud whether we should be doing something.</p>
+    <p>There were attractions to visit and things we could schedule.</p>
+    <p>But then we reminded ourselves:</p>
+    <p>This is our life now.</p>
+    <p>We didn't have to see every attraction or have every available experience.</p>
+    <p>We could just go for a walk.</p>
+    <p>So we did.</p>
+    <p>We walked through town toward the beach.</p>
+    <p>There seemed to be fewer tourists that day. Maybe because it was Sunday. Maybe because we'd gotten out relatively early by our new standards.</p>
+    <p>We found a little ferry that crossed the channel to the beach for €1 each.</p>
+    <p>The trip took less than a minute.</p>
+    <p>The two guys running it seemed to have a pretty good life—take a euro, say hello, drive the boat across, repeat.</p>
+    <p>I joked that I'd found my next business.</p>
+    <p>Afterward we walked back to the hotel, changed into our pool clothes, found lounge chairs in the shade—</p>
+    <p>and took a nap.</p>
+
+    <h2>The Grin</h2>
+    <p>That evening we went out early for dinner.</p>
+    <p>The restaurant the concierge recommended doesn't open on Sundays, so we wandered around looking for somewhere to have a drink while we waited for restaurants to open.</p>
+    <p>We ended up sitting at a table in the street at Easy Bar Wine &amp; Kitchen.</p>
+    <p>Shirley had a glass of wine.</p>
+    <p>I had a beer.</p>
+    <p>The weather was warm.</p>
+    <p>There was a soft breeze.</p>
+    <p>People wandered past us.</p>
+    <p>We sat there looking online for somewhere to have dinner.</p>
+    <p>And the grin showed up again.</p>
+    <p>There wasn't anything extraordinary happening.</p>
+    <p>That seemed to be the point.</p>
+
+    <h2>The New Shirley</h2>
+    <p>We ended up eating right where we were.</p>
+    <p>Shirley ordered the octopus salad.</p>
+    <p>Octopus salad.</p>
+    <p>This was becoming funny.</p>
+    <p>The woman who historically wouldn't eat things like sushi, poke or seared tuna was now voluntarily ordering octopus.</p>
+    <p>Apparently this was the new Shirley.</p>
+    <p>We also ordered goat cheese with toast.</p>
+    <p>Both were so good that we decided to stay and ordered piri-piri chicken.</p>
+    <p>That was great too.</p>
+    <p>After dinner, neither of us wanted to go back to the hotel.</p>
+    <p>People were everywhere, sitting at tables that seemed almost to spill into the streets.</p>
+    <p>The weather was perfect.</p>
+    <p>So we kept walking.</p>
+    <p>At one point Shirley noticed a vacant storefront.</p>
+    <p>She wondered aloud what kind of business she could put there.</p>
+    <p>Then she added:</p>
+    <p>"Hopefully we could live upstairs."</p>
+    <p>We'd been in Lagos barely a day.</p>
+
+    <h2>Everything Is Awesome</h2>
+    <p>Back at Casa Mãe, Shirley commented on how much she loved the tapestries hanging on the walls.</p>
+    <p>How great they were.</p>
+    <p>I laughed and told her that they really weren't.</p>
+    <p>But we were in this beautiful place and everything was great.</p>
+    <p>Just like the random dinner we'd had.</p>
+    <p>Just like the rosé in the Douro Valley.</p>
+    <p>Apparently our theme song should be Everything Is Awesome from The Lego Movie.</p>
+    <p>At 8:00 that evening we were still sitting outside on the patio having a glass of wine.</p>
+    <p>The thought of going inside didn't appeal to me at all.</p>
+    <p>Suddenly I understood the late Portuguese dinners a little better.</p>
+    <p>We'd already stopped at a real estate office and looked at rental listings.</p>
+    <p>I wrote:</p>
+    <p>"I could definitely give it a shot staying here for a month."</p>
+
+    <h2>Home?</h2>
+    <p>The following day I realized something else.</p>
+    <p>Shirley no longer had the Sunday Scaries.</p>
+    <p>There was no Sunday evening anxiety about what was waiting Monday morning.</p>
+    <p>There was no Monday morning.</p>
+    <p>Not in the old sense.</p>
+    <p>We booked a boat tour. The concierge suggested a morning departure, but I had to explain that getting to breakfast before 10:30 was becoming difficult for us.</p>
+    <p>An evening cruise would probably be better.</p>
+    <p>At some point Shirley said:</p>
+    <p>"When we get home today…"</p>
+    <p>I stopped her.</p>
+    <p>"Home?"</p>
+    <p>She was referring to Casa Mãe.</p>
+    <p>We'd been there two days.</p>
+    <p>Then, with no particular lead-in, Shirley said that when we came back, we should fly in, stay at a hotel for a few days, and look at rentals until we found the right one.</p>
+    <p>Not if we came back.</p>
+    <p>When.</p>
+    <p>We'd passed a Pilates studio and lots of apartments while riding the local tourist tram.</p>
+    <p>We even passed a school for sale.</p>
+    <p>I joked that it was in a great location and perhaps we should buy it.</p>
+    <p>Shirley suggested we send it to Jeff and Anthony and tell them we'd found our next location.</p>
+    <p>Apparently we weren't quite ready to reopen Discovery Montessori: Lagos.</p>
+    <p>But we were clearly ready to return.</p>
+
+    <h2>Is This Enough?</h2>
+    <p>That afternoon we had lunch overlooking the marina.</p>
+    <p>Shirley had a green wine and declared that it was light and good in the afternoon.</p>
+    <p>We ate chicken tikka skewers over salad.</p>
+    <p>When we finished, she said:</p>
+    <p>"That was great!"</p>
+    <p>It was.</p>
+    <p>But it was also just some random restaurant we'd stopped at.</p>
+    <p>I wondered whether being unburdened, sitting beside a marina in Portugal with a glass of wine, simply made everything taste better.</p>
+    <p>It was getting hard to recognize Shirley she was so relaxed.</p>
+    <p>Later we took an hour-long boat tour along the coastline and through the caves.</p>
+    <p>Afterward we walked back into town and stopped somewhere for a small bite.</p>
+    <p>We ordered one portion of swordfish.</p>
+    <p>It was more than enough for both of us.</p>
+    <p>And, of course, it was great.</p>
+    <p>Earlier that day we'd asked ourselves whether what we were doing was enough.</p>
+    <p>Our day had consisted of:</p>
+    <p>Wake around 8.</p>
+    <p>Coffee in the room.</p>
+    <p>Breakfast at 10:30.</p>
+    <p>Walk around town.</p>
+    <p>Ride the tourist tram from 2 to 3.</p>
+    <p>Lunch with wine overlooking the marina.</p>
+    <p>Boat tour at 5.</p>
+    <p>Swordfish for dinner.</p>
+    <p>Back to the hotel around 8, just as many people were heading out.</p>
+    <p>I wrote:</p>
+    <p>"Tough to beat this."</p>
+
+    <h2>Into the Water</h2>
+    <p>On our final full day, we had tickets for a kayak tour.</p>
+    <p>A boat would take us along the coast and we'd get into kayaks from there rather than having to paddle all the way out from the beach.</p>
+    <p>We walked over in our swim clothes.</p>
+    <p>While we waited for the tour, we sat on a patio with a bottle of water.</p>
+    <p>And once again, for no particular reason, the grin appeared.</p>
+    <p>I wrote:</p>
+    <p>"We're both loving this area."</p>
+    <p>I'd already started looking at houses.</p>
+    <p>They seemed surprisingly affordable.</p>
+    <p>But buying something didn't really make sense.</p>
+    <p>We didn't want to live in Lagos year-round. We wanted summers in different countries and winters somewhere warm with longer days.</p>
+    <p>What made much more sense was coming back and renting a place.</p>
+    <p>Stay for a month.</p>
+    <p>Maybe longer.</p>
+    <p>Have a Pilates studio.</p>
+    <p>Exercise.</p>
+    <p>Walk to restaurants.</p>
+    <p>Go to the beach.</p>
+    <p>Get out on the water.</p>
+    <p>Live here rather than simply visit.</p>
+
+    <h2>What We'll Remember</h2>
+    <p>We'll remember the impossibly narrow streets leading to Casa Mãe.</p>
+    <p>We'll remember fish cataplana on our first afternoon.</p>
+    <p>We'll remember espresso in the room, workouts on the balcony and breakfasts at 10:30.</p>
+    <p>We'll remember wondering whether we should be doing more—and deciding that we didn't have to.</p>
+    <p>We'll remember the €1 ferry to the beach and joking about buying our next business.</p>
+    <p>We'll remember naps beside the pool.</p>
+    <p>We'll remember sitting at a table in the street with a beer and a glass of wine when the grin appeared for no particular reason.</p>
+    <p>We'll remember the new Shirley ordering octopus salad.</p>
+    <p>We'll remember wandering the streets after dinner because neither of us wanted to go inside.</p>
+    <p>We'll remember Shirley seeing an empty storefront and hoping we could live upstairs.</p>
+    <p>We'll remember realizing that she no longer had the Sunday Scaries.</p>
+    <p>We'll remember her referring to Casa Mãe as home.</p>
+    <p>We'll remember green wine overlooking the marina, the boat ride along the caves and sharing one order of swordfish for dinner.</p>
+    <p>We'll remember walking to our kayak tour in our swim clothes.</p>
+    <p>And we'll remember that somewhere during those four days, the conversation changed from whether we'd return to how we'd do it when we returned.</p>
+
+    <h2>Would We Return?</h2>
+    <p>This was the easiest answer of the trip.</p>
+    <p>Yes.</p>
+    <p>Porto was comfortable.</p>
+    <p>We could imagine spending longer in the Douro Valley.</p>
+    <p>We liked Cascais.</p>
+    <p>Barrocal was a wonderful place to slow down.</p>
+    <p>But Lagos was the first place in Portugal where we started imagining the details of an actual life.</p>
+    <p>Not buying a vacation home.</p>
+    <p>Not moving permanently.</p>
+    <p>Just coming back and staying long enough that the place could become familiar.</p>
+    <p>Find an apartment.</p>
+    <p>Join a gym or Pilates studio.</p>
+    <p>Know where we like to eat.</p>
+    <p>Walk to the beach.</p>
+    <p>Get on the water.</p>
+    <p>Have ordinary days.</p>
+    <p>When we left for Lisbon on July 29, the contrast was almost immediate. Lisbon was busier. People seemed to be moving faster. There were more tourists, more people taking selfies, more city energy.</p>
+    <p>We both noticed how different it felt from Lagos.</p>
+    <p>And when we talked about returning to Portugal, the plan was already beginning to take shape:</p>
+    <p>Travel slowly down the coast.</p>
+    <p>Stay a few nights somewhere.</p>
+    <p>If we like it, find a rental and stay longer.</p>
+    <p>Then move on.</p>
+    <p>But get back to the Algarve.</p>
+    <p>Lagos was no longer simply one of the places we'd visited in Portugal.</p>
+    <p>It was becoming one of the places we wanted to come back to.</p>
+  </article>
+  <section class="photo-grid">
+    <div class="photo-pano">
+      <figure>
+        <img src="Lagos-06.jpg" alt="Kayakers inside a dramatic sea cave at Ponta da Piedade, a beam of light streaming through an opening in the rock above, the arch framing the open ocean beyond">
+        <figcaption>Inside the sea caves at Ponta da Piedade — the kayak tour along the Algarve coast</figcaption>
+      </figure>
+    </div>
+    <div class="photo-pair">
+      <figure>
+        <img src="Lagos-01.jpg" alt="Keith diving from the upper deck of a catamaran into the Atlantic, golden limestone cliffs stretching along the coast behind him">
+        <figcaption>Off the boat and into the Atlantic — afternoon on the water off Lagos</figcaption>
+      </figure>
+      <figure>
+        <img src="Lagos-03.jpg" alt="View from the Forte da Ponta da Bandeira over the Lagos harbor entrance, the long beach of Meia Praia stretching into the distance">
+        <figcaption>The fort and harbor at Lagos, looking toward Meia Praia</figcaption>
+      </figure>
+    </div>
+    <div class="photo-full">
+      <figure>
+        <img src="Lagos-04.jpg" alt="Keith and Shirley standing on either side of the large Lagos coat of arms carved in stone, the old city walls and olive trees behind them">
+        <figcaption>The Lagos coat of arms, beside the old city walls</figcaption>
+      </figure>
+    </div>
+    <div class="photo-pair">
+      <figure>
+        <img src="Lagos-02.jpg" alt="A cataplana dish of fish, prawns and clams at restaurant Irmãos on the Lagos waterfront, a Super Bock beer and glass of white wine alongside">
+        <figcaption>Fish cataplana at Irmãos on the waterfront — our first dinner in Lagos</figcaption>
+      </figure>
+      <figure>
+        <img src="Lagos-05.jpg" alt="A white art deco building with green shutters and an arched entrance facing a cobblestone square in the old town of Lagos — a vacant storefront with an apartment above">
+        <figcaption>The storefront Shirley noticed — she wondered what kind of business she could put there, and whether we could live upstairs</figcaption>
+      </figure>
+    </div>
+  </section>
+  <nav class="article-nav">
+    <div class="article-nav-item">
+      <p class="article-nav-label">← Previous</p>
+      <a href="jrn-alentejo.html" class="article-nav-title">Alentejo</a>
+    </div>
+    <div class="article-nav-item" style="text-align:right">
+      <p class="article-nav-label">Next →</p>
+      <a href="jrn-lisbon.html" class="article-nav-title">Lisbon</a>
+    </div>
+  </nav>
+  <footer>
+    <span class="footer-logo">After Achievement</span>
+    <div style="display:flex;gap:1.5rem;font-size:0.8rem;color:var(--ink-3)"><a href="journey.html">All trips</a></div>
+  </footer>
+</body>
+</html>

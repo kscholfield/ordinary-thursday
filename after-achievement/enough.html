@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enough — After Achievement</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #F8F6F2; --bg-alt: #F0EDE7; --ink: #1C1917; --ink-2: #57534E; --ink-3: #A8A29E;
+      --green: #2C4A3E; --border: #E2DDD7;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    html { font-size: 17px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { border-bottom: 1px solid var(--border); padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; background: var(--bg); position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--green); font-weight: normal; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 0.85rem; letter-spacing: 0.03em; color: var(--ink-2); }
+    .nav-links li a:hover { color: var(--green); }
+    .breadcrumb { max-width: 700px; margin: 0 auto; padding: 1.5rem 2rem 0; font-size: 0.78rem; color: var(--ink-3); letter-spacing: 0.03em; }
+    .breadcrumb a { color: var(--green); }
+    .breadcrumb span { margin: 0 0.4rem; }
+    .article-header { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 2rem; border-bottom: 1px solid var(--border); }
+    .article-section { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 1rem; }
+    .article-header h1 { font-family: var(--serif); font-size: 2.1rem; font-weight: normal; line-height: 1.25; color: var(--ink); margin-bottom: 1rem; letter-spacing: -0.01em; }
+    .article-meta { font-size: 0.8rem; color: var(--ink-3); display: flex; gap: 1.5rem; }
+    .article-body { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+    .article-body p { font-size: 1rem; line-height: 1.85; color: var(--ink-2); margin-bottom: 1.4rem; }
+    .article-body p:first-child { font-size: 1.1rem; color: var(--ink); }
+    .principle { background: var(--bg-alt); border: 1px solid var(--border); border-left: 3px solid var(--green); padding: 1.25rem 1.5rem; margin: 2.5rem 0; }
+    .principle-label { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); margin-bottom: 0.4rem; }
+    .principle p { font-family: var(--serif); font-size: 0.95rem; color: var(--ink); line-height: 1.6; margin-bottom: 0 !important; }
+    .article-nav { max-width: 700px; margin: 0 auto; padding: 2rem 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .article-nav-item { max-width: 45%; }
+    .article-nav-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.3rem; }
+    .article-nav-title { font-family: var(--serif); color: var(--ink); line-height: 1.4; }
+    .article-nav-title:hover { color: var(--green); }
+    footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--ink-3); }
+    .footer-logo { font-family: var(--serif); color: var(--green); }
+    .view-toggle { position: fixed; bottom: 1.5rem; right: 1.5rem; display: flex; gap: 0.5rem; }
+    .view-btn { padding: 0.5rem 1rem; font-size: 0.75rem; border: 1px solid var(--border); background: var(--bg); color: var(--ink-2); cursor: pointer; border-radius: 3px; font-family: var(--sans); }
+    .view-btn.active { background: var(--green); color: white; border-color: var(--green); }
+    .view-btn:hover:not(.active) { background: var(--bg-alt); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">After Achievement</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
+      <li><a href="index.html#navigate">Books</a></li>
+      <li><a href="journey.html">Our Journey</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span><a href="#">Field Notes</a><span>›</span>Enough
+  </div>
+
+  <header class="article-header">
+    <p class="article-section">Field Notes</p>
+    <h1>Enough</h1>
+    <div class="article-meta">
+      <span>Keith Scholfield</span>
+      <span>March 2026</span>
+      <span>5 min read</span>
+    </div>
+  </header>
+
+  <article class="article-body">
+
+    <p>For a long time, the question was simple. More.</p>
+
+    <p>More growth. More revenue. More opportunity. More optionality. The assumption — rarely stated, but always present — was that more would lead to better. More security. More freedom. More ability to live life on your own terms.</p>
+
+    <p>And for a while, that assumption holds. Building creates momentum. Progress compounds. Each step forward expands what feels possible. There is satisfaction in that. Clarity. Direction.</p>
+
+    <p>But somewhere along the way, the question begins to change. Not all at once. Quietly. Almost in the background. How much is enough?</p>
+
+    <p>It is a difficult question to answer while still in the game. Because the game itself is designed to make "enough" hard to recognize. There is always another level. Another opportunity. Another reason to continue. Even when the original goals have been met, the momentum remains. And momentum, once established, is hard to interrupt.</p>
+
+    <p>In our case, the realization came in hindsight. Not because the business failed. Not because the opportunity disappeared. But because something else changed. Health. Time. Perspective. Shirley's health forced a clarity that had been easy to postpone. The question was no longer abstract. It became immediate. What are we trading for continued growth?</p>
+
+    <p>Looking back, the answer is clearer than it was at the time. We were trading time. Energy. Vitality. Years that could have been spent differently.</p>
+
+    <p>At the time, those tradeoffs didn't feel obvious. Each decision made sense in isolation. Each step forward seemed reasonable. But over the span of years, those decisions accumulated. And what looked like incremental progress revealed itself, in hindsight, as something else. A cost.</p>
+
+    <p>This is the part that is hardest to see while it is happening. Because the cost is not paid all at once. It is paid gradually. In missed time. Deferred experiences. Energy spent elsewhere. And the assumption — almost always — is that there will be time later. To travel. To slow down. To shift focus. Sometimes that assumption holds. Sometimes it doesn't.</p>
+
+    <p>What becomes clear, eventually, is that "enough" is not a number. It is a recognition. A point at which the marginal value of more begins to decline. And the cost of pursuing it begins to rise. The challenge is that this point is rarely visible in real time. Because the signals are subtle. And because the environment often reinforces continued growth. There is status in building. Recognition. Validation. A sense of forward movement. There is less clarity in stopping.</p>
+
+    <p>Stopping requires something different. Not ambition. Not discipline. Discernment. The ability to recognize when the return no longer justifies the cost. And perhaps more importantly, the willingness to act on that recognition.</p>
+
+    <p>This is where the idea of "leaving the game before it leaves you" becomes more than a phrase. It becomes a decision. Not driven by fear. But by clarity.</p>
+
+    <p>In hindsight, if we had recognized "enough" earlier, we might have made different choices. We might not have built that last school. We might have stepped away sooner. Not because the work wasn't meaningful. It was. But because, at some point, we already had what we needed to live a rich and adventurous life. What we traded, without fully realizing it, was time.</p>
+
+    <p>This is not a regret in the traditional sense. More a recognition. A clearer understanding of the tradeoffs. And that understanding changes how we think about the second game.</p>
+
+    <p>Because once "enough" is recognized, the question shifts. From <em>How do I get more?</em> to <em>How do I use what I already have well?</em> That shift is subtle. But it changes everything. It changes how time is spent. How decisions are made. What is prioritized. It reduces the need for urgency. Creates space for reflection. Allows for a different kind of intentionality.</p>
+
+    <p>It also brings a certain tension. Because the instinct to continue building does not disappear overnight. There are still opportunities. Still ideas. Still the ability to do more. But now they are evaluated differently. Not just by what they could produce. But by what they would require — time, energy, attention — and whether those are worth allocating in that direction.</p>
+
+    <p>This is where "enough" becomes practical. Not a philosophical idea. But a filter. A way to decide what to pursue, what to decline, and what to let go. Without that filter, it is easy to drift back into the first game. To continue building out of habit. Or inertia. Or subtle external pressure.</p>
+
+    <div class="principle">
+      <p class="principle-label">Field Note</p>
+      <p>"Enough" is not a number. It is a recognition — a point at which the return no longer justifies the cost. The second game is not defined by accumulation. It is guided by that recognition.</p>
+    </div>
+
+  </article>
+
+  <nav class="article-nav">
+    <div class="article-nav-item">
+      <p class="article-nav-label">← Previous</p>
+      <a href="steady-presence.html" class="article-nav-title">The Steady Presence</a>
+    </div>
+    <div class="article-nav-item" style="text-align:right">
+      <p class="article-nav-label">Next →</p>
+      <a href="aliveness.html" class="article-nav-title">Optimize for Aliveness</a>
+    </div>
+  </nav>
+
+  <footer>
+    <span class="footer-logo">After Achievement</span>
+    <div style="display:flex;gap:1.5rem;font-size:0.8rem;color:var(--ink-3)">
+      <a href="#">Archive</a>
+    </div>
+  </footer>
+
+  <div class="view-toggle">
+    <button class="view-btn" onclick="window.location='index.html'">Home</button>
+    <button class="view-btn active" onclick="window.location='enough.html'">Field Note</button>
+  </div>
+
+</body>
+</html>

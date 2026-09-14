@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walking Without a Script — After Achievement</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #F8F6F2; --bg-alt: #F0EDE7; --ink: #1C1917; --ink-2: #57534E; --ink-3: #A8A29E;
+      --green: #2C4A3E; --border: #E2DDD7;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    html { font-size: 17px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { border-bottom: 1px solid var(--border); padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; background: var(--bg); position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--green); font-weight: normal; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 0.85rem; letter-spacing: 0.03em; color: var(--ink-2); }
+    .nav-links li a:hover { color: var(--green); }
+    .breadcrumb { max-width: 700px; margin: 0 auto; padding: 1.5rem 2rem 0; font-size: 0.78rem; color: var(--ink-3); letter-spacing: 0.03em; }
+    .breadcrumb a { color: var(--green); }
+    .breadcrumb span { margin: 0 0.4rem; }
+    .article-header { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 2rem; border-bottom: 1px solid var(--border); }
+    .article-section { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 1rem; }
+    .article-header h1 { font-family: var(--serif); font-size: 2.1rem; font-weight: normal; line-height: 1.25; color: var(--ink); margin-bottom: 1rem; letter-spacing: -0.01em; }
+    .article-meta { font-size: 0.8rem; color: var(--ink-3); display: flex; gap: 1.5rem; }
+    .article-body { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+    .article-body p { font-size: 1rem; line-height: 1.85; color: var(--ink-2); margin-bottom: 1.4rem; }
+    .article-body p:first-child { font-size: 1.1rem; color: var(--ink); }
+    .article-body .location { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 1.4rem; }
+    .principle { background: var(--bg-alt); border: 1px solid var(--border); border-left: 3px solid var(--green); padding: 1.25rem 1.5rem; margin: 2.5rem 0; }
+    .principle-label { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); margin-bottom: 0.4rem; }
+    .principle p { font-family: var(--serif); font-size: 0.95rem; color: var(--ink); line-height: 1.6; margin-bottom: 0 !important; }
+    .article-nav { max-width: 700px; margin: 0 auto; padding: 2rem 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .article-nav-item { max-width: 45%; }
+    .article-nav-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.3rem; }
+    .article-nav-title { font-family: var(--serif); color: var(--ink); line-height: 1.4; }
+    .article-nav-title:hover { color: var(--green); }
+    footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--ink-3); }
+    .footer-logo { font-family: var(--serif); color: var(--green); }
+    .view-toggle { position: fixed; bottom: 1.5rem; right: 1.5rem; display: flex; gap: 0.5rem; }
+    .view-btn { padding: 0.5rem 1rem; font-size: 0.75rem; border: 1px solid var(--border); background: var(--bg); color: var(--ink-2); cursor: pointer; border-radius: 3px; font-family: var(--sans); }
+    .view-btn.active { background: var(--green); color: white; border-color: var(--green); }
+    .view-btn:hover:not(.active) { background: var(--bg-alt); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">After Achievement</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
+      <li><a href="index.html#navigate">Books</a></li>
+      <li><a href="journey.html">Our Journey</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span><a href="#">Field Notes</a><span>›</span>Walking Without a Script
+  </div>
+
+  <header class="article-header">
+    <p class="article-section">Field Notes</p>
+    <h1>Walking Without a Script</h1>
+    <div class="article-meta">
+      <span>Keith Scholfield</span>
+      <span>January 2026</span>
+      <span>3 min read</span>
+    </div>
+  </header>
+
+  <article class="article-body">
+
+    <p class="location">Lomé, Togo</p>
+
+    <p>Once again, the planned excursion — a bus ride through the city — didn't appeal to us. With a bit of newfound confidence, we skipped it and took the shuttle to what passed for the city center, planning to walk and find a café.</p>
+
+    <p>Like the taxi stand the day before, the city center wasn't much of a center. The streets weren't as walkable — or as full of cafés — as the websites had suggested. The market wasn't really operating — it was Sunday — and the streets felt quieter and maybe lonelier than expected. There was a taxi stand nearby, but we chose to walk anyway.</p>
+
+    <p>The first few blocks felt uncertain. Not unsafe, but exposed. There was very little foot traffic, and more armed police and military than I was used to seeing. We walked toward the Independence Monument, then toward a nearby hotel we had identified as a possible lunch stop. When we arrived, the restaurant wasn't open yet. We sat inside briefly to cool off, then decided to keep moving rather than wait.</p>
+
+    <p>From there we walked to the Palais de Lomé. The streets were empty, and we felt more exposed than before. A few kids walked near us, clearly surprised to see us. A man ahead of us stopped and urinated on a wall.</p>
+
+    <p>Once we arrived, the transition was abrupt. Outside the gates, the city felt unsettled and unfinished. Inside, the grounds were calm, manicured, and quiet. We bought tickets with U.S. dollars and were approached by a young man offering a guided tour.</p>
+
+    <p>The guide — Marcel — was warm and attentive. He walked us through the grounds, describing the displays and exhibits and answering questions. The pace slowed. The noise receded. And our anxieties mellowed. For a while, it felt easy to forget the city outside the walls.</p>
+
+    <p>As we finished, I noticed myself getting anxious again. The walk to the Palais had been uncomfortable and exposed. The walk back to the shuttle would be the same.</p>
+
+    <p>When we left, the contrast returned immediately. I was confident we could find our way back — I had offline maps downloaded. The routing didn't work, but the map still displayed, and I had pinned our starting point. We navigated by orientation rather than instructions. It wasn't difficult — but it wasn't comfortable either.</p>
+
+    <p>We were aware of the heat. Of the lack of shade. Of being noticeable. We didn't feel threatened, but we didn't relax. We were attentive in a way that felt new but necessary. We made it back without issue.</p>
+
+    <p>Walking, choosing, adjusting. No escort. No schedule. No script.</p>
+
+    <p>It wasn't an easy day. But it was a good day, and it was ours.</p>
+
+    <div class="principle">
+      <p class="principle-label">Field Note</p>
+      <p>Not confidence, exactly — but calibration. Still uncomfortable, but less hesitant. Still cautious, but moving under our own power.</p>
+    </div>
+
+  </article>
+
+  <nav class="article-nav">
+    <div class="article-nav-item">
+      <p class="article-nav-label">← Previous</p>
+      <a href="how-far-to-walk.html" class="article-nav-title">How Far Is Too Far to Walk Back?</a>
+    </div>
+    <div class="article-nav-item" style="text-align:right">
+      <p class="article-nav-label">Next →</p>
+      <a href="freedom-from-performance.html" class="article-nav-title">Freedom From Performance</a>
+    </div>
+  </nav>
+
+  <footer>
+    <span class="footer-logo">After Achievement</span>
+    <div style="display:flex;gap:1.5rem;font-size:0.8rem;color:var(--ink-3)">
+      <a href="#">Archive</a>
+    </div>
+  </footer>
+
+  <div class="view-toggle">
+    <button class="view-btn" onclick="window.location='index.html'">Home</button>
+    <button class="view-btn active" onclick="window.location='walking-without-script.html'">Field Note</button>
+  </div>
+
+</body>
+</html>

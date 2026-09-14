@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porto — Our Journey — After Achievement</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #F8F6F2; --bg-alt: #F0EDE7; --ink: #1C1917; --ink-2: #57534E; --ink-3: #A8A29E; --green: #2C4A3E; --border: #E2DDD7; --serif: Georgia, 'Times New Roman', serif; --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    html { font-size: 17px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { border-bottom: 1px solid var(--border); padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; background: var(--bg); position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--green); font-weight: normal; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 0.85rem; letter-spacing: 0.03em; color: var(--ink-2); }
+    .nav-links li a:hover { color: var(--green); }
+    .breadcrumb { max-width: 700px; margin: 0 auto; padding: 1.5rem 2rem 0; font-size: 0.78rem; color: var(--ink-3); letter-spacing: 0.03em; }
+    .breadcrumb a { color: var(--green); }
+    .breadcrumb span { margin: 0 0.4rem; }
+    .article-header { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 2rem; border-bottom: 1px solid var(--border); }
+    .article-section { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 0.5rem; }
+    .article-header h1 { font-family: var(--serif); font-size: 2.1rem; font-weight: normal; line-height: 1.25; color: var(--ink); margin-bottom: 1rem; letter-spacing: -0.01em; }
+    .article-meta { font-size: 0.8rem; color: var(--ink-3); display: flex; gap: 1.5rem; }
+    .article-body { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+    .article-body p { font-size: 1rem; line-height: 1.85; color: var(--ink-2); margin-bottom: 1.4rem; }
+    .article-body p:first-child { font-size: 1.1rem; color: var(--ink); }
+    .article-body h2 { font-family: var(--serif); font-size: 1.35rem; font-weight: normal; color: var(--ink); margin: 2.5rem 0 1rem; line-height: 1.3; }
+    .article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1.4rem; color: var(--ink-2); }
+    .article-body li { margin-bottom: 0.4rem; line-height: 1.75; }
+    .article-body hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    .article-nav { max-width: 700px; margin: 0 auto; padding: 2rem 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .article-nav-item { max-width: 45%; }
+    .article-nav-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.3rem; }
+    .article-nav-title { font-family: var(--serif); color: var(--ink); line-height: 1.4; }
+    .article-nav-title:hover { color: var(--green); }
+    .photo-grid { max-width: 700px; margin: 0 auto; padding: 0 2rem 3rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .photo-pano figure, .photo-full figure, .photo-pair figure { margin: 0; }
+    .photo-pano img { width: 100%; height: auto; display: block; border-radius: 2px; }
+    .photo-full img { width: 100%; height: auto; display: block; border-radius: 2px; }
+    .photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .photo-pair img { width: 100%; height: 280px; object-fit: cover; object-position: center; display: block; border-radius: 2px; }
+    figcaption { font-size: 0.72rem; color: var(--ink-3); text-align: center; margin-top: 0.3rem; letter-spacing: 0.02em; }
+    @media (max-width: 500px) { .photo-pair { grid-template-columns: 1fr; } .photo-pair img { height: 220px; } }
+    footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--ink-3); }
+    .footer-logo { font-family: var(--serif); color: var(--green); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">After Achievement</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
+      <li><a href="index.html#navigate">Books</a></li>
+      <li><a href="journey.html">Our Journey</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span><a href="journey.html">Our Journey</a><span>›</span>Porto
+  </div>
+  <header class="article-header">
+    <p class="article-section">Our Journey</p>
+    <h1>Porto</h1>
+    <div class="article-meta">
+      <span>Keith &amp; Shirley</span>
+      <span>July 2026</span>
+    </div>
+  </header>
+  <article class="article-body">
+    <p>After eleven days in Morocco—and one final airport saga—we landed in Porto.</p>
+    <p>The contrast began almost immediately.</p>
+    <p>Getting through EES couldn't have been easier. There was no line, the automated system worked, and within minutes we were through.</p>
+    <p>Our driver met us at baggage claim and took us into the old part of Porto, where our hotel was located. Cars were restricted in the neighborhood, and we were grateful that his was permitted through. After our experience rearranging luggage at the Casablanca airport, dragging those same bags several blocks over Porto's cobblestones would not have been a welcome introduction to Portugal.</p>
+    <p>The hotel was cute. The room was small, although probably only by our standards.</p>
+    <p>We dropped our things, got some restaurant recommendations from the woman at the front desk, and headed out for tapas.</p>
+    <p>We were in Portugal.</p>
+
+    <h2>Seeing Porto with a Local</h2>
+    <p>The next morning we met our guide for a half-day walking tour.</p>
+    <p>She showed us the city and talked about its history and architecture, but some of the most interesting parts of the day came from hearing about her own life in Porto.</p>
+    <p>Tourism had transformed the city in complicated ways.</p>
+    <p>Money from visitors and short-term rentals had helped restore old buildings and neighborhoods. Tourism also provided people like our guide with work.</p>
+    <p>But the same forces had made living in central Porto increasingly unaffordable for local residents.</p>
+    <p>She told us that average wages were around €1,300 a month. She and her family had eventually bought a home farther out in the suburbs because they couldn't afford to live closer to the center.</p>
+    <p>It was an interesting introduction to a place we were enjoying as tourists while hearing directly from someone living with some of tourism's consequences.</p>
+
+    <h2>Porto on Our Own</h2>
+    <p>The following day, we explored without a guide.</p>
+    <p>We started with an unusual attraction: a McDonald's.</p>
+    <p>The restaurant occupies a historic building and had been required to retain much of the original interior, so instead of the typical fast-food decor, there were chandeliers and mirrored walls.</p>
+    <p>From there, we walked down toward the Douro River.</p>
+    <p>We crossed the upper level of the bridge, looking down over the city and river, then took the gondola to the waterfront.</p>
+    <p>We wandered among the restaurants and shops.</p>
+    <p>A Viking river cruise ship was docked below.</p>
+    <p>We looked at it and agreed:</p>
+    <p>We should take a river cruise.</p>
+    <p>That was becoming one of the advantages of having fewer obligations waiting for us. Seeing something interesting no longer necessarily had to produce the thought, maybe someday.</p>
+    <p>It could just as easily produce, maybe next.</p>
+    <p>We crossed back over the lower level of the bridge and continued walking along the waterfront and through the city.</p>
+
+    <h2>Dinner Before a Call</h2>
+    <p>Eventually we made our way back toward the hotel for an early dinner because I had a 6:00 call.</p>
+    <p>The meal was simple and wonderful.</p>
+    <p>I had chicken breast with piri-piri. Shirley had a fish and shrimp stew. I remember the meals being about €20 each.</p>
+    <p>The portions weren't enormous, and both dishes tasted great.</p>
+    <p>After my call, we shared a fruit plate and had a glass of wine.</p>
+    <p>Nothing particularly extraordinary happened.</p>
+    <p>It was just a very good day walking around Porto.</p>
+
+    <h2>Leaving Porto</h2>
+    <p>On July 15, we had breakfast at the hotel before leaving for the Douro Valley.</p>
+    <p>We overheard an older couple trying to deal with a last-minute change to their transportation. Their driver couldn't reach the hotel and wanted them to drag their luggage to a neighboring street—and be there 30 minutes earlier than they'd originally planned.</p>
+    <p>Watching them deal with it reinforced two things we'd already learned.</p>
+    <p>Moving luggage through these old European streets wasn't easy.</p>
+    <p>And being ready 30 minutes early was becoming increasingly unlikely for us.</p>
+    <p>Our own departure was easy.</p>
+    <p>The drive to the Douro Valley would take only about an hour.</p>
+    <p>We spent much of it talking with our driver.</p>
+    <p>He had grown up in Cascais but told us that it had become increasingly expensive. Many younger people could no longer afford to live there. He had moved to an area outside Porto where he could rent a place for roughly €400 a month rather than around €1,100 for something smaller in town.</p>
+    <p>It reminded me of Irvine.</p>
+    <p>We had built a wonderful life there, but our own daughters couldn't afford to live there.</p>
+    <p>It was interesting to hear versions of the same story in Portugal.</p>
+
+    <h2>What We'll Remember</h2>
+    <p>We'll remember the relief of arriving in Portugal after the ordeal of leaving Morocco and discovering that getting through immigration was almost effortless.</p>
+    <p>We'll remember being grateful that our driver could get us close to the hotel so we didn't have to drag our luggage over the cobblestones.</p>
+    <p>We'll remember the old-world feel of Porto.</p>
+    <p>We'll remember walking the city with our guide and hearing not just its history but what it was actually like to live there.</p>
+    <p>We'll remember learning about the tiles and architecture.</p>
+    <p>We'll remember crossing the bridge high above the Douro, taking the gondola down and wandering along both sides of the river.</p>
+    <p>We'll remember seeing the Viking ship and immediately thinking that a river cruise looked like something we'd enjoy.</p>
+    <p>And we'll remember that ordinary meals were already becoming part of what we liked about Portugal. We didn't need an elaborate restaurant experience. A plate of piri-piri chicken or fish stew after a day of walking could be plenty.</p>
+
+    <h2>Would We Return?</h2>
+    <p>Yes.</p>
+    <p>Porto was charming, walkable and easy to enjoy.</p>
+    <p>But our strongest memory may be less about any particular attraction than about our first feeling of Portugal.</p>
+    <p>At the end of the trip, when we looked back over the places we'd visited, Shirley described Porto with one word:</p>
+    <p>Comfortable.</p>
+    <p>That word would become increasingly important.</p>
+    <p>Morocco had been fascinating. We were glad we'd gone. But much of the time we were conscious of being somewhere unfamiliar.</p>
+    <p>Portugal felt easier almost immediately.</p>
+    <p>We could walk.</p>
+    <p>We could wander.</p>
+    <p>We could find somewhere to eat.</p>
+    <p>We could figure things out ourselves.</p>
+    <p>We felt comfortable.</p>
+    <p>We didn't yet know just how important that feeling would become.</p>
+    <p>On July 15, we left Porto for the Douro Valley.</p>
+    <p>And that's where the idea that we might actually be able to live this way started becoming much more real.</p>
+  </article>
+  <section class="photo-grid">
+    <div class="photo-pano"><figure><img src="Porto-09.jpg" alt="Ponte Dom Luis I spanning the Douro River, seen from the hillside above Vila Nova de Gaia"><figcaption>Ponte Dom Lu&#237;s I over the Douro</figcaption></figure></div>
+    <div class="photo-pair">
+      <figure><img src="Porto-06.jpg" alt="The Ribeira waterfront with colorful buildings and the Guindais funicular track climbing the hillside"><figcaption>The Ribeira waterfront</figcaption></figure>
+      <figure><img src="Porto-07.jpg" alt="Cais da Ribeira promenade with Ponte Dom Luis I and the Teleférico de Gaia cable cars above"><figcaption>Cais da Ribeira</figcaption></figure>
+    </div>
+    <div class="photo-pair">
+      <figure><img src="Porto-02.jpg" alt="Shirley walking up a narrow cobblestone street in Porto's old town"><figcaption>Porto's old town</figcaption></figure>
+      <figure><img src="Porto-08.jpg" alt="Shirley in the Teleférico de Gaia cable car, with the Douro River and Porto behind her"><figcaption>Teleférico de Gaia</figcaption></figure>
+    </div>
+    <div class="photo-pano"><figure><img src="Porto-17.jpg" alt="The famous azulejo tile panels lining the walls of São Bento railway station"><figcaption>S&#227;o Bento station</figcaption></figure></div>
+    <div class="photo-pano"><figure><img src="Porto-11.jpg" alt="The grand interior atrium of the Palácio da Bolsa with its ornate glass dome"><figcaption>Pal&#225;cio da Bolsa</figcaption></figure></div>
+    <div class="photo-pair">
+      <figure><img src="Porto-03.jpg" alt="Torre dos Clérigos rising above outdoor café seating in the plaza below"><figcaption>Torre dos Cl&#233;rigos</figcaption></figure>
+      <figure><img src="Porto-05.jpg" alt="Igreja do Carmo and Igreja dos Carmelitas — the twin Baroque churches side by side"><figcaption>Igreja do Carmo &amp; dos Carmelitas</figcaption></figure>
+    </div>
+    <div class="photo-pair">
+      <figure><img src="Porto-13.jpg" alt="Porto City Hall at Praça General Humberto Delgado with the Porto sign in front"><figcaption>Porto City Hall</figcaption></figure>
+      <figure><img src="Porto-15.jpg" alt="Sé do Porto cathedral with the equestrian statue of Vimara Peres in the foreground"><figcaption>S&#233; do Porto</figcaption></figure>
+    </div>
+    <div class="photo-pano"><figure><img src="Porto-12.jpg" alt="Jardim do Infante Dom Henrique with the Henry the Navigator monument and the red Mercado Ferreira Borges behind"><figcaption>Jardim do Infante Dom Henrique</figcaption></figure></div>
+    <div class="photo-full"><figure><img src="Porto-01.jpg" alt="A beautifully plated fish dish with vibrant orange carrot puree and green vegetables"><figcaption>Dinner in Porto</figcaption></figure></div>
+  </section>
+  <nav class="article-nav">
+    <div class="article-nav-item">
+      <p class="article-nav-label">← Previous</p>
+      <a href="jrn-leaving-morocco.html" class="article-nav-title">Leaving Morocco</a>
+    </div>
+    <div class="article-nav-item" style="text-align:right">
+      <p class="article-nav-label">Next →</p>
+      <a href="jrn-douro-valley.html" class="article-nav-title">Douro Valley</a>
+    </div>
+  </nav>
+  <footer>
+    <span class="footer-logo">After Achievement</span>
+    <div style="display:flex;gap:1.5rem;font-size:0.8rem;color:var(--ink-3)"><a href="journey.html">All trips</a></div>
+  </footer>
+</body>
+</html>

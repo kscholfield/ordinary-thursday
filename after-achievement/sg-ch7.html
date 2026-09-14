@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Arcs, Not Vacations — The Second Game — After Achievement</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #F8F6F2; --bg-alt: #F0EDE7; --ink: #1C1917; --ink-2: #57534E; --ink-3: #A8A29E; --green: #2C4A3E; --border: #E2DDD7; --serif: Georgia, 'Times New Roman', serif; --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+    html { font-size: 17px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    nav { border-bottom: 1px solid var(--border); padding: 0 2.5rem; display: flex; align-items: center; justify-content: space-between; height: 64px; background: var(--bg); position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--green); font-weight: normal; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; font-size: 0.85rem; letter-spacing: 0.03em; color: var(--ink-2); }
+    .nav-links li a:hover { color: var(--green); }
+    .breadcrumb { max-width: 700px; margin: 0 auto; padding: 1.5rem 2rem 0; font-size: 0.78rem; color: var(--ink-3); letter-spacing: 0.03em; }
+    .breadcrumb a { color: var(--green); }
+    .breadcrumb span { margin: 0 0.4rem; }
+    .article-header { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 2rem; border-bottom: 1px solid var(--border); }
+    .article-section { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 0.5rem; }
+    .chapter-label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.75rem; }
+    .article-header h1 { font-family: var(--serif); font-size: 2.1rem; font-weight: normal; line-height: 1.25; color: var(--ink); margin-bottom: 1rem; letter-spacing: -0.01em; }
+    .article-meta { font-size: 0.8rem; color: var(--ink-3); display: flex; gap: 1.5rem; }
+    .article-body { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+    .article-body p { font-size: 1rem; line-height: 1.85; color: var(--ink-2); margin-bottom: 1.4rem; }
+    .article-body p:first-child { font-size: 1.1rem; color: var(--ink); }
+    .article-body em { font-style: italic; }
+    .article-body strong { font-weight: 600; color: var(--ink); }
+    .article-body h2 { font-family: var(--serif); font-size: 1.35rem; font-weight: normal; color: var(--ink); margin: 2.5rem 0 1rem; line-height: 1.3; }
+    .article-body ul { margin: 0 0 1.4rem 1.5rem; }
+    .article-body ul li { font-size: 1rem; line-height: 1.85; color: var(--ink-2); margin-bottom: 0.4rem; }
+    .article-body hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    .article-nav { max-width: 700px; margin: 0 auto; padding: 2rem 2rem 3rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .article-nav-item { max-width: 45%; }
+    .article-nav-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.3rem; }
+    .article-nav-title { font-family: var(--serif); color: var(--ink); line-height: 1.4; }
+    .article-nav-title:hover { color: var(--green); }
+    footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--ink-3); }
+    .footer-logo { font-family: var(--serif); color: var(--green); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">After Achievement</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="field-notes.html">Field Notes</a></li>
+      <li><a href="index.html#navigate">Books</a></li>
+      <li><a href="journey.html">Our Journey</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a><span>›</span><a href="the-second-game.html">The Second Game</a><span>›</span>Chapter 7
+  </div>
+  <header class="article-header">
+    <p class="article-section">The Second Game</p>
+    <p class="chapter-label">Chapter 7</p>
+    <h1>Design Arcs, Not Vacations</h1>
+    <div class="article-meta"><span>Keith Scholfield</span></div>
+  </header>
+  <article class="article-body">
+
+    <h2>The Structure Freedom Needs</h2>
+
+    <p>Once someone recognizes the risks of drift and the importance of preserving capacity, a natural question emerges: if freedom requires structure, what kind of structure replaces the one that disappeared?</p>
+
+    <p>The answer is not rigid schedules or a return to pressure.</p>
+
+    <p>The second game does not require urgency. But it does require direction.</p>
+
+    <p>One of the most effective ways to create that direction is to think in terms of <strong>arcs</strong> rather than isolated experiences.</p>
+
+    <h2>The Vacation Model</h2>
+
+    <p>Most people approach travel the way they did during the first game.</p>
+
+    <p>A week somewhere interesting. A long weekend in a new city. A brief break before returning home.</p>
+
+    <p>These experiences can be enjoyable.</p>
+
+    <p>But they are disconnected.</p>
+
+    <p>They provide highlights, not continuity. Consumption, not immersion.</p>
+
+    <p>That model made sense when work structured everything else.</p>
+
+    <p>In the second game, something else becomes possible.</p>
+
+    <h2>The Arc</h2>
+
+    <p>An arc is a sustained period of engagement organized around a theme, a place, or a pursuit.</p>
+
+    <p>It is not just about where you go.</p>
+
+    <p>It is about what you are <strong>building toward and moving through over time</strong>.</p>
+
+    <p>An arc has a beginning (anticipation and preparation), a middle (immersion and experience), and an end (integration and reflection).</p>
+
+    <p>Instead of isolated moments, arcs create continuity.</p>
+
+    <p>Instead of variety, they create depth.</p>
+
+    <h2>Physical Arcs</h2>
+
+    <p>Some arcs are physical.</p>
+
+    <p>You train for something. Then you do it.</p>
+
+    <ul>
+      <li>Preparing physically → trekking at altitude</li>
+      <li>Building endurance → long-distance hikes</li>
+      <li>Learning to dive → exploring different regions underwater</li>
+    </ul>
+
+    <p>The preparation becomes part of the experience. The experience reinforces the preparation.</p>
+
+    <p>The arc connects them.</p>
+
+    <h2>Intellectual and Experiential Arcs</h2>
+
+    <p>But arcs are not only physical.</p>
+
+    <p>They can be intellectual, cultural, or creative.</p>
+
+    <ul>
+      <li>Learning a language → traveling through the region where it is spoken</li>
+      <li>Studying history → walking the places where it unfolded</li>
+      <li>Exploring a philosophy → applying it across different environments</li>
+      <li>Developing a craft → producing a body of work over time</li>
+    </ul>
+
+    <p>The same structure applies.</p>
+
+    <p>Preparation → immersion → integration.</p>
+
+    <h2>Travel Arcs</h2>
+
+    <p>Travel itself can become an arc.</p>
+
+    <p>Instead of isolated trips, you move through regions gradually.</p>
+
+    <p>A cruise becomes an entry point. An extension becomes exploration. Weeks become months.</p>
+
+    <p>The experience deepens.</p>
+
+    <p>You begin to notice things that are invisible on shorter visits: the rhythm of a place, the way people move through their days, the difference between visiting and inhabiting.</p>
+
+    <h2>The Power of Slower Movement</h2>
+
+    <p>Moving slowly changes everything.</p>
+
+    <p>Logistics consume less energy. Experiences feel less rushed. Attention deepens.</p>
+
+    <p>You begin to notice instead of consume.</p>
+
+    <p>The difference is subtle—but meaningful.</p>
+
+    <h2>Forward Pull</h2>
+
+    <p>The most important benefit of arcs is something less obvious: <strong>forward pull</strong>.</p>
+
+    <p>Forward pull is the opposite of willpower.</p>
+
+    <p>Willpower requires constant effort. Forward pull changes behavior naturally.</p>
+
+    <p>When something meaningful lies ahead, the future begins to shape the present.</p>
+
+    <p>Training becomes easier. Preparation becomes natural. Discipline aligns with anticipation.</p>
+
+    <p>In the first game, deadlines created this automatically.</p>
+
+    <p>In the second game, it must be designed.</p>
+
+    <p>Arcs create it.</p>
+
+    <h2>From Consumption to Immersion</h2>
+
+    <p>Modern life encourages consumption.</p>
+
+    <p>More places. More experiences. More variety.</p>
+
+    <p>Arcs shift the question.</p>
+
+    <p>From: <strong>What should I see?</strong></p>
+
+    <p>To: <strong>What does it feel like to live this?</strong></p>
+
+    <p>That shift changes everything.</p>
+
+    <h2>Restoring Trajectory</h2>
+
+    <p>When life is organized around arcs, something important returns: <strong>trajectory</strong>.</p>
+
+    <p>The question of "what's next?" becomes easier.</p>
+
+    <p>Not because options disappear—but because direction exists.</p>
+
+    <p>Freedom creates options. Arcs create direction.</p>
+
+  </article>
+  <nav class="article-nav">
+    <div class="article-nav-item">
+      <p class="article-nav-label">← Previous</p>
+      <a href="sg-ch6.html" class="article-nav-title">Protect the Engine</a>
+    </div>
+    <div class="article-nav-item" style="text-align:right">
+      <p class="article-nav-label">Next →</p>
+      <a href="sg-ch8.html" class="article-nav-title">Don't Cement Identity Too Quickly</a>
+    </div>
+  </nav>
+  <footer>
+    <span class="footer-logo">After Achievement</span>
+    <div style="display:flex;gap:1.5rem;font-size:0.8rem;color:var(--ink-3)"><a href="#">Archive</a></div>
+  </footer>
+</body>
+</html>
