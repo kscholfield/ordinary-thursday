@@ -339,3 +339,50 @@ figcaption { margin-top: 0.75rem; color: var(--muted); font-size: 0.78rem; }
   .contents li span { display: block; margin-bottom: 0.2rem; }
   .chapter-nav { gap: 1rem; }
 }
+
+/* Travel archive */
+.travel-archive { max-width: var(--reading); }
+.travel-year {
+  margin: 3.5rem 0 0;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--rule);
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.travel-year:first-child { margin-top: 0; }
+.travel-archive .archive-entry { padding-block: 1.4rem; }
+.travel-archive h3 { margin: 0; }
+.travel-archive h3 a { color: var(--ink); text-decoration-color: transparent; }
+.travel-archive h3 a:hover { color: var(--green-dark); text-decoration-color: currentColor; }
+.travel-page { max-width: 58rem; }
+.travel-page .back-link { max-width: var(--reading); }
+.travel-header { max-width: var(--reading); margin-bottom: 2.75rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rule); }
+.travel-header h1 { margin-bottom: 1.25rem; font-size: clamp(2.5rem, 7vw, 4.75rem); }
+.travel-meta { display: flex; flex-wrap: wrap; gap: 0.35rem 1.5rem; color: var(--muted); font-size: 0.82rem; }
+.travel-body { max-width: var(--reading); font-family: var(--serif); font-size: 1.08rem; line-height: 1.8; }
+.travel-body p { margin: 0 0 1.35rem; }
+.travel-body h2 { margin: 3rem 0 1rem; font-size: clamp(1.6rem, 3vw, 2rem); }
+.travel-body h3 { margin: 2.5rem 0 1rem; }
+.travel-body ul, .travel-body ol { margin: 0 0 1.5rem; padding-left: 1.5rem; }
+.travel-body li + li { margin-top: 0.45rem; }
+.travel-body hr { margin: 2.5rem 0; border: 0; border-top: 1px solid var(--rule); }
+.travel-photos { display: grid; gap: 2.5rem; margin-top: 4rem; padding-top: 3rem; border-top: 1px solid var(--rule); }
+.travel-photos .photo-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; align-items: start; }
+.travel-photos img { width: 100%; height: auto; object-fit: initial; }
+.travel-photos figcaption { max-width: var(--reading); }
+.travel-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+.travel-nav-item { color: var(--ink); font-family: var(--serif); line-height: 1.4; text-decoration: none; }
+.travel-nav-item:hover { color: var(--green-dark); text-decoration: underline; }
+.travel-nav-item span { display: block; margin-bottom: 0.4rem; color: var(--muted); font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.travel-nav-next { text-align: right; }
+.travel-return { margin: 2.5rem 0 0; text-align: center; font-size: 0.82rem; }
+@media (max-width: 720px) {
+  .travel-meta { display: grid; gap: 0.15rem; }
+  .travel-body { font-size: 1rem; }
+  .travel-photos .photo-pair { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+@media (max-width: 420px) { .travel-nav { gap: 1rem; } }
