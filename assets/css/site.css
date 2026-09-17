@@ -20,13 +20,12 @@ a { color: var(--green-dark); text-underline-offset: 0.2em; }
 a:hover { color: var(--green); }
 a:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
 img { display: block; max-width: 100%; height: auto; }
-.site-header { border-bottom: 1px solid var(--rule); }
-body.thursdays-page .site-header,
-body.essays-page .site-header {
+.site-header {
   position: sticky;
   top: 0;
   z-index: 10;
   background: var(--paper);
+  border-bottom: 1px solid var(--rule);
 }
 .header-inner, main, .site-footer-inner { width: min(calc(100% - 3rem), var(--content)); margin-inline: auto; }
 .header-inner { display: flex; align-items: baseline; justify-content: space-between; gap: 2rem; padding-block: 1.5rem; }
@@ -212,6 +211,5 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); }
 .travel-nav-item:hover { color: var(--green-dark); text-decoration: underline; }
 .travel-nav-item span { display: block; margin-bottom: 0.4rem; color: var(--muted); font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .travel-nav-next { text-align: right; }
-.travel-return { margin: 2.5rem 0 0; text-align: center; font-size: 0.82rem; }
 @media (max-width: 720px) { .travel-meta { display: grid; gap: 0.15rem; } .travel-body { font-size: 1rem; } .travel-photos .photo-pair { grid-template-columns: 1fr; gap: 2.5rem; } }
 @media (max-width: 420px) { .travel-nav { gap: 1rem; } }
