@@ -21,7 +21,8 @@ a:hover { color: var(--green); }
 a:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
 img { display: block; max-width: 100%; height: auto; }
 .site-header { border-bottom: 1px solid var(--rule); }
-body.thursdays-page .site-header {
+body.thursdays-page .site-header,
+body.essays-page .site-header {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -131,8 +132,13 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); }
 .essay-body .location { color: var(--muted); font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.04em; }
 .essay-body .principle { margin: 2.75rem 0; padding: 1.5rem 0 0 1.5rem; border-top: 1px solid var(--rule); border-left: 2px solid var(--green); }
 .essay-body .principle-label { margin-bottom: 0.65rem; color: var(--green-dark); font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
-.essay-return { margin: 3.5rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+.essay-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+.essay-nav a { color: var(--ink); font-family: var(--serif); line-height: 1.4; text-decoration: none; }
+.essay-nav a:hover { color: var(--green-dark); text-decoration: underline; }
+.essay-nav a span { display: block; margin-bottom: 0.4rem; color: var(--muted); font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.essay-nav-next { grid-column: 2; text-align: right; }
 @media (max-width: 720px) { .essay-meta { display: grid; gap: 0.15rem; } .essay-body { font-size: 1rem; } }
+@media (max-width: 420px) { .essay-nav { gap: 1rem; } }
 
 /* Books */
 .books-grid-published { grid-template-columns: repeat(2, minmax(0, 1fr)); }
