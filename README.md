@@ -38,3 +38,21 @@ Photographs are displayed with `max-width: 100%` and `height: auto`, without
 fixed-height wrappers or forced crops. New archival photographs should retain
 explicit intrinsic width and height attributes and follow the originals/web
 folder convention above.
+
+## Anniversary-year archives
+
+The `thursdays/index.html` and `travel/index.html` pages show the current
+anniversary year (Year Two: August 5, 2026–August 4, 2027). Each category's
+`year-one.html` holds Year One (August 5, 2025–August 4, 2026).
+Both use a shared year selector. Preserve the existing travel-summary URLs,
+image paths, and Thursday entry date anchors when extending these archives.
+The Thursday index forwards older date bookmarks to the Year One page.
+
+Travel summaries spanning August 5 remain whole and are filed by their start
+date. The standalone `What a Year` retrospective belongs to Year One.
+
+The Travel index includes an “On the Horizon” section for confirmed upcoming
+journeys. Update it as plans firm up, and remove a completed journey when its
+travel summary is published. At the next anniversary, archive Year Two under
+a stable year-specific filename, update both selectors, and make the indexes
+show the new current year.

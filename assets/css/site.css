@@ -213,3 +213,25 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); }
 .travel-nav-next { text-align: right; }
 @media (max-width: 720px) { .travel-meta { display: grid; gap: 0.15rem; } .travel-body { font-size: 1rem; } .travel-photos .photo-pair { grid-template-columns: 1fr; gap: 2.5rem; } }
 @media (max-width: 420px) { .travel-nav { gap: 1rem; } }
+
+/* Anniversary-year archives and upcoming journeys. */
+.year-archive > .page-heading { margin-bottom: 3rem; }
+.archive-years { display: flex; flex-wrap: wrap; gap: 1rem 2rem; padding-block: 1rem; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.archive-years a { font-size: 0.95rem; text-decoration: none; }
+.archive-years a[aria-current="page"] { font-weight: 700; text-decoration: underline; }
+.archive-period { margin-block: 2.5rem 3rem; }
+.archive-period h2 { margin-bottom: 0.5rem; }
+.archive-period p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+.on-the-horizon { max-width: 53rem; margin-bottom: 4rem; }
+.on-the-horizon h2 { margin-bottom: 1rem; }
+.horizon-intro { max-width: var(--reading); margin: 0 0 1.5rem; color: var(--muted); }
+.horizon-list { margin: 0; }
+.horizon-list > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 1rem 2rem; padding-block: 1rem; border-top: 1px solid var(--rule); }
+.horizon-list dt { font-family: var(--serif); font-size: 1.15rem; line-height: 1.4; }
+.horizon-list dd { margin: 0; color: var(--muted); font-size: 0.9rem; }
+.horizon-list dd span { display: block; margin-top: 0.2rem; }
+.journal-entry[id] { scroll-margin-top: 8rem; }
+@media (max-width: 600px) {
+  .horizon-list > div { grid-template-columns: minmax(0, 1fr); gap: 0.35rem; }
+  .on-the-horizon { margin-bottom: 3rem; }
+}
