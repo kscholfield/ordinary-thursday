@@ -51,8 +51,9 @@ The Thursday index forwards older date bookmarks to the Year One page.
 Travel summaries spanning August 5 remain whole and are filed by their start
 date. The standalone `What a Year` retrospective belongs to Year One.
 
-The Travel index includes an “On the Horizon” section for confirmed upcoming
-journeys. Update it as plans firm up, and remove a completed journey when its
+Travel’s `upcoming.html` page contains “On the Horizon” for confirmed upcoming
+journeys. The Travel selector aligns Upcoming, Year Two, and Year One; the
+index continues to open Year Two by default. Update it as plans firm up, and remove a completed journey when its
 travel summary is published. At the next anniversary, archive Year Two under
 a stable year-specific filename, update both selectors, and make the indexes
 show the new current year.
