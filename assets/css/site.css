@@ -235,3 +235,6 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); }
   .horizon-list > div { grid-template-columns: minmax(0, 1fr); gap: 0.35rem; }
   .on-the-horizon { margin-bottom: 3rem; }
 }
+
+/* Portrait journal videos retain their full composition and native controls. */
+.journal-entry figure video { display: block; width: 100%; max-width: 28rem; height: auto; background: #171915; }
