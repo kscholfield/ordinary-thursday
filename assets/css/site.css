@@ -240,8 +240,8 @@ h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); }
 .journal-entry figure video { display: block; width: 100%; max-width: 28rem; height: auto; background: #171915; }
 
 /* Upcoming journeys grouped by country, followed by later departures. */
-.horizon-group { margin-top: 2.5rem; }
-.horizon-group > h3 { margin-bottom: 0.5rem; }
+.horizon-group { margin-top: 3.5rem; }
+.horizon-group > h3 { margin-bottom: 0.65rem; font-size: clamp(1.7rem, 3vw, 2rem); font-weight: 600; line-height: 1.2; }
 .horizon-group > .archive-note { margin-top: 0; margin-bottom: 1rem; }
 .horizon-list dt a { color: var(--ink); text-decoration-color: transparent; }
 .horizon-list dt a:hover { color: var(--green-dark); text-decoration-color: currentColor; }
