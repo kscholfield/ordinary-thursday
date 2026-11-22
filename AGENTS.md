@@ -84,6 +84,12 @@ audience-building project.
 - Keep files within the most relevant content directory described in
   `README.md`; shared presentation assets belong in `assets/`.
 
+### Travel summaries
+
+- Use a concise place name, optionally with the country, as the title of new travel summaries.
+- Lead each photo-bearing travel summary with one uncropped photograph beneath the title and dates, before the prose. Keep its caption and alt text, and show the remaining photographs after the prose without repeating the opening image.
+- Preserve text-only entries until a suitable photograph is supplied or selected.
+
 ### Thursday archive
 
 - Thursdays is a chronological visual journal, but it does not need to contain
